@@ -11,7 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
 
-
+    @include('partials.analytics')
 </head>
 
 <body>
@@ -629,14 +629,9 @@
 
             </div>
         </div>
-
-
     </section>
 
-
     <script src="{{asset('js/all.js')}}"></script>
-
-
 </div>
 
 </body>
