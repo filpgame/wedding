@@ -35,13 +35,13 @@
             <div class="sub_menu anim">
                 <ul>
                     <li><a href="#our_story">Nossa História</a></li>
-                    <li><a href="#guests">Our Bridal Party</a></li>
-                    <li><a href="#when_where">When & Where</a></li>
-                    <li><a href="#hotel">Hotel Reservation</a></li>
-                    <li><a href="#events">Our Events</a></li>
-                    <li><a href="#rsvp">RSVP</a></li>
-                    <li><a href="#gallery">Our Gallery</a></li>
-                    <li><a href="#registry">Gift Registry</a></li>
+                    <li><a href="#guests">Padrinhos e Madrinhas</a></li>
+                    <li><a href="#when_where">Quando & Onde</a></li>
+                    <li><a href="#hotel">Como Chegar</a></li>
+                    <li><a href="#events">Momentos Marcantes</a></li>
+                    <li><a href="#rsvp">Confirmar Presença</a></li>
+                    <li><a href="#gallery">Nossa Galeria</a></li>
+                    <li><a href="#registry">Lista de Presentes</a></li>
                 </ul>
             </div>
             <div class="sub_img anim"></div>
@@ -62,14 +62,14 @@
 <div class="page">
 
     <!-- Intro -->
-    <section class="home_intro white_txt parallax2" data-image="{{asset('images/pictures/arco.jpg')}}">
+    <section class="home_intro white_txt parallax2" data-image="{{$imageMain}}">
         <div class="home_txt" data-0="opacity:1" data-top-bottom="opacity:0">
 
             <!-- Intro Text -->
 
-            <div class="title1 title1_2">Getting Married</div>
-            <div class="bullet"><span>19 <b>09</b></span></div>
-            <div class="title0">2015</div>
+            <div class="title1 title1_2">Vamos Casar!</div>
+            <div class="bullet"><span>07 <b>01</b></span></div>
+            <div class="title0">2017</div>
             <a href="#married" class="intro_down"><span><i class="fa fa-angle-down"></i></span></a>
         </div>
         <div class="into_firefly"></div>
@@ -87,11 +87,10 @@
             </div>
 
             <div class="married_txt" data-bottom="opacity:0" data-center="opacity:1">
-                <h2><span>You're</span> Invited</h2>
-                On the 19rd of September, 2015<br>
-                <b>Matthew Carter Mitchell & Mallory Brooke Laughlin</b><br>
-                eloped in Tucson, AZ.<br>
-                <a href="#rsvp" class="btn go">RSRP NOW</a>
+                <h2><span>Você está</span> Convidado!</h2>
+                Dia 07 de Janeiro de 2017<br>
+                <b>Felipe Rodrigues & Suellen Leite</b><br>
+                <a href="#rsvp" class="btn go">CONFIRME JÁ</a>
 
                 <div class="married_coundown"></div>
                 <div class="double_arrow"></div>
@@ -103,7 +102,7 @@
 
     <!-- Story -->
     <section class="our_story" id="our_story">
-        <h2><span>Our</span> Story</h2>
+        <h2><span>Nossa</span> História</h2>
 
         <!-- Wrapper -->
         <div class="story_wrapper">
@@ -230,7 +229,7 @@
     <!-- The Crew -->
     <section class="guests" id="guests">
         <div class="container">
-            <h2><span>Our</span> Bridal Party</h2>
+            <h2><span>Nossos</span> Bridal Party</h2>
 
             <!-- Guest Wrapper -->
             <div class="guest_wrapper">
@@ -309,7 +308,7 @@
 
 
     <!-- When & Where -->
-    <section class="when_where white_txt parallax" id="when_where" data-image="http://placehold.it/1920x800" data-bottom-top="opacity:0;" data-bottom="opacity:1;">
+    <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('images/pictures/IMG_20160214_180815345.jpg')}}" data-bottom-top="opacity:0;" data-bottom="opacity:1;">
         <div class="over"></div>
         <div class="container">
 
