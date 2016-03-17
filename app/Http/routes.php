@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -26,6 +22,6 @@ Route::get('/', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+\Route::group(['middleware' => ['web']], function (\Illuminate\Routing\Router $router) {
+    $router->get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 });
