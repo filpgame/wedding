@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew & Mallory</title>
+    <title>Felipe & Suellen</title>
 
     <link rel="stylesheet" href="{{asset("css/all.css")}}">
 

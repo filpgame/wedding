@@ -33,7 +33,7 @@ body b {
 
 html {
     min-height: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .page {
@@ -44,7 +44,7 @@ html {
 }
 
 .nicescroll-rails {
-    z-index: 100 !important
+    z-index: 100 !important;
 }
 
 section {
@@ -52,7 +52,7 @@ section {
     overflow: hidden;
     text-align: center;
     position: relative;
-    padding: 0
+    padding: 0;
 }
 
 a {
@@ -64,7 +64,7 @@ a {
     position: relative;
     z-index: 1;
     padding: 60px 16px 48px;
-    max-width: 970px
+    max-width: 970px;
 
 }
 
@@ -79,16 +79,16 @@ h2:after {
     content: "";
     width: 16px;
     height: 26px;
-    margin: 12px auto 0
+    margin: 12px auto 0;
 }
 
 h2 b {
-    font: 400 46px/48px Roboto Condensed
+    font: 400 46px/48px Roboto Condensed;
 }
 
 h2 span {
     font: 300 26px/40px Roboto Condensed;
-    padding: 0 13px 0 0
+    padding: 0 13px 0 0;
 }
 
 h2 span:after {
@@ -99,7 +99,7 @@ h2 span:after {
     height: 40px;
     transform: rotate(17deg);
     margin: 9px 0 0 13px;
-    background: #d9c6b1
+    background: #d9c6b1;
 }
 
 hr {
@@ -107,7 +107,7 @@ hr {
     border: 0;
     height: 1px;
     background: #757575;
-    margin: 48px auto 0
+    margin: 48px auto 0;
 }
 
 .btn {
@@ -125,29 +125,29 @@ hr {
 
 .btn:active, .btn:focus {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    color: #fff !important
+    color: #fff !important;
 }
 
 /*# 2. White  Text*/
 .white_txt {
     color: #fff;
-    background-color: #65666b
+    background-color: #65666b;
 }
 
 .white_txt h2 {
-    color: #fff
+    color: #fff;
 }
 
 .white_txt h2 span:after {
-    background: #fff
+    background: #fff;
 }
 
 .white_txt .slash i {
-    background: #fff
+    background: #fff;
 }
 
 .white_txt a {
-    color: #fff
+    color: #fff;
 }
 
 /*# 3. Header*/
@@ -162,7 +162,7 @@ header {
     position: absolute;
     right: 16px;
     margin: 5px 0 0 0;
-    font-size: 16px
+    font-size: 16px;
 }
 
 .header_social a {
@@ -182,15 +182,15 @@ header {
     height: 40px;
     transform: rotate(17deg);
     margin: 6px 0 0 18px;
-    background: #6f6f6f
+    background: #6f6f6f;
 }
 
 .header_social a:last-child:after {
-    display: none
+    display: none;
 }
 
 .header_social i {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .main_menu_btn {
@@ -202,7 +202,7 @@ header {
     width: 48px;
     z-index: 103;
     padding: 10px;
-    margin: 7px 0 0 16px
+    margin: 7px 0 0 16px;
 
 }
 
@@ -212,7 +212,7 @@ header {
     position: fixed;
     z-index: 11;
     top: 0;
-    display: none
+    display: none;
 
 }
 
@@ -257,14 +257,14 @@ header {
     counter-increment: item;
     font: 30px Great Vibes;
     display: inline-block;
-    margin: 0 20px 0 0
+    margin: 0 20px 0 0;
 }
 
 .sub_menu a {
     color: #666;
     font: 400 18px/28px Roboto Condensed;
     display: inline-block;
-    padding: 6px 0
+    padding: 6px 0;
 }
 
 .sub_menu a:before {
@@ -275,7 +275,7 @@ header {
     transform: skew(-17deg, 0deg);
     position: absolute;
     margin: 2px 0 0 -10px;
-    content: ""
+    content: "";
 }
 
 .sub_img {
@@ -330,15 +330,15 @@ header {
 }
 
 .line1 {
-    top: 14px
+    top: 14px;
 }
 
 .line2 {
-    top: 23px
+    top: 23px;
 }
 
 .line3 {
-    top: 32px
+    top: 32px;
 }
 
 .main_menu_btn:hover .line1 {
@@ -364,7 +364,7 @@ header {
 /*# 4. Intro*/
 .slider, .slider .owl-wrapper-outer, .slider .owl-item, .slider_item, .slider .owl-wrapper {
     height: 100% !important;
-    width: 100%
+    width: 100%;
 }
 
 .slider .parallax {
@@ -379,7 +379,7 @@ header {
 }
 
 .slider_item img {
-    display: none
+    display: none;
 }
 
 .slider_item {
@@ -390,11 +390,11 @@ header {
     left: 100px;
     right: 100px;
     top: 0;
-    bottom: 0
+    bottom: 0;
 }
 
 .intro_slider .owl-buttons {
-    margin: -38px 0 0 0
+    margin: -38px 0 0 0;
 }
 
 .home_intro {
@@ -404,19 +404,19 @@ header {
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed
+    background-attachment: fixed;
 }
 
 .into_firefly {
     width: 100%;
     height: 100%;
     z-index: 3;
-    position: absolute
+    position: absolute;
 }
 
 .into_firefly div {
     border-radius: 50%;
-    opacity: 0.8
+    opacity: 0.8;
 }
 
 .home_txt {
@@ -436,7 +436,7 @@ header {
     right: 24px;
     overflow: hidden;
     transition: opacity 0.3s;
-    display: none
+    display: none;
 }
 
 .player.vis {
@@ -445,14 +445,14 @@ header {
 
 .names {
     font: 46px Great Vibes;
-    color: #000
+    color: #000;
 }
 
 .slash {
     display: inline-block;
     margin: 0 10px;
     height: 48px;
-    text-align: center
+    text-align: center;
 }
 
 .slash i {
@@ -462,19 +462,19 @@ header {
     display: inline-block;
     transform: skew(-17deg, 0deg);
     position: absolute;
-    margin: 10px 0 0 0
+    margin: 10px 0 0 0;
 }
 
 .date {
     font: 40px Great Vibes;
     margin: 0 0 50px 0;
-    color: #000
+    color: #000;
 }
 
 .date span {
     font: 32px Roboto Condensed;
     display: inline-block;
-    padding: 0 0 0 20px
+    padding: 0 0 0 20px;
 }
 
 .date span:before {
@@ -485,32 +485,32 @@ header {
     height: 40px;
     transform: rotate(17deg);
     margin: 3px 0 0 -13px;
-    background: #fff
+    background: #fff;
 }
 
 #countdown {
     font: 34px/40px Roboto Condensed;
     text-align: center;
-    height: 60px
+    height: 60px;
 }
 
 .count_bl {
     display: inline-block;
-    color: #fff
+    color: #fff;
 }
 
 .count_h {
     display: inline-block;
-    position: absolute
+    position: absolute;
 }
 
 .days {
-    font: 14px/14px Roboto Condensed
+    font: 14px/14px Roboto Condensed;
 }
 
 .count_bl .countdown-period {
     font: 14px/14px Roboto Condensed;
-    display: block
+    display: block;
 }
 
 .intro_down span {
@@ -520,11 +520,11 @@ header {
     color: #fff;
     margin: 0 auto;
     position: relative;
-    text-align: center
+    text-align: center;
 }
 
 .intro_down i {
-    position: relative
+    position: relative;
 }
 
 .intro_down i {
@@ -551,7 +551,7 @@ header {
     width: 16px;
     height: 26px;
     margin: 8px 0 0 16px;
-    margin: 5px auto
+    margin: 5px auto;
 }
 
 .bullet i {
@@ -562,7 +562,7 @@ header {
     position: absolute;
     margin: -3px 0 0 -35px;
     opacity: 0.5;
-    font: 400 18px/28px Roboto Condensed
+    font: 400 18px/28px Roboto Condensed;
 }
 
 .bullet span b {
@@ -577,11 +577,11 @@ header {
 }
 
 .married .container {
-    padding: 60px 0 0
+    padding: 60px 0 0;
 }
 
 .married .btn {
-    margin: 30px 0 0
+    margin: 30px 0 0;
 }
 
 .marries_left {
@@ -589,17 +589,17 @@ header {
     width: 33%;
     height: 270px;
     position: relative;
-    left: -41px
+    left: -41px;
 }
 
 .bride_block {
     width: 100%;
     height: 100%;
     position: absolute;
-    transform: skew(-17deg, 0);
+    transform: skew(-17deg, 0deg);
     transform-origin: 50% 50% 0;
     left: 0;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .bride_img {
@@ -607,13 +607,13 @@ header {
     background-size: cover;
     width: 100%;
     height: 100%;
-    transform: skew(17deg, 0);
-    transform-origin: 0 0 0
+    transform: skew(17deg, 0deg);
+    transform-origin: 0 0 0;
 }
 
 .marries_center {
     float: left;
-    width: 33%
+    width: 33%;
 }
 
 .marries_right {
@@ -621,17 +621,17 @@ header {
     width: 33%;
     height: 270px;
     position: relative;
-    right: -41px
+    right: -41px;
 }
 
 .groom_block {
     width: 100%;
     height: 100%;
     position: absolute;
-    transform: skew(-17deg, 0);
+    transform: skew(-17deg, 0deg);
     transform-origin: 50% 50% 0;
     right: 0;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .groom_img {
@@ -640,12 +640,12 @@ header {
     width: 100%;
     height: 100%;
     transform: skew(17deg, 0);
-    transform-origin: 100% 100% 0
+    transform-origin: 100% 100% 0;
 }
 
 .married_coundown {
     font: 400 40px/48px Roboto Condensed;
-    margin: 20px 0 0 0
+    margin: 20px 0 0 0;
 }
 
 .married_coundown .countdown-section {
@@ -668,12 +668,12 @@ header {
     vertical-align: top;
     margin: 0 0 0 -15px;
     position: absolute;
-    left: 0
+    left: 0;
 
 }
 
 .married_coundown .countdown-section:first-child:before {
-    display: none
+    display: none;
 }
 
 .married_coundown .countdown-period {
@@ -686,7 +686,7 @@ header {
 .double_arrow {
     width: 188px;
     height: 25px;
-    margin: 25px auto
+    margin: 25px auto;
 }
 
 .bride_title_block {
@@ -714,9 +714,9 @@ header {
     width: 1px;
     height: 25px;
     background: #d9c6b1;
-    transform: skew(-17deg, 0);
+    transform: skew(-17deg, 0deg);
     margin: -35px 0 0 20px;
-    left: 50%
+    left: 50%;
 }
 
 .bride_title_block:after {
@@ -726,7 +726,7 @@ header {
     width: 1px;
     height: 25px;
     background: #d9c6b1;
-    transform: skew(-17deg, 0);
+    transform: skew(-17deg, 0deg);
     margin: 7px 0 0 -9px;
     left: 50%
 }
@@ -756,9 +756,9 @@ header {
     width: 1px;
     height: 25px;
     background: #d9c6b1;
-    transform: skew(-17deg, 0);
+    transform: skew(-17deg, 0deg);
     margin: -35px 0 0 20px;
-    left: 50%
+    left: 50%;
 }
 
 .groom_title_block:after {
@@ -768,9 +768,9 @@ header {
     width: 1px;
     height: 25px;
     background: #d9c6b1;
-    transform: skew(-17deg, 0);
+    transform: skew(-17deg, 0deg);
     margin: 7px 0 0 -9px;
-    left: 50%
+    left: 50%;
 }
 
 .married_photo img {
@@ -801,7 +801,7 @@ header {
     left: 0;
     margin: 30px 0 0 0;
     background-position: center;
-    background-size: cover
+    background-size: cover;
 }
 
 .im1:before, .im2:before {
@@ -820,13 +820,13 @@ header {
     border-radius: 50%;
     position: absolute;
     right: 0;
-    margin: 30px 0 0 0
+    margin: 30px 0 0 0;
 }
 
 .im_arrows {
     position: absolute;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .im_arrows:before {
@@ -836,7 +836,7 @@ header {
     content: "";
     position: absolute;
     top: -43px;
-    right: 20px
+    right: 20px;
 }
 
 .im_arrows:after {
@@ -846,7 +846,7 @@ header {
     content: "";
     position: absolute;
     bottom: -34px;
-    right: 120px
+    right: 120px;
 }
 
 /*# 6. Our Story*/
@@ -932,7 +932,7 @@ header {
     position: absolute;
     transform-origin: top;
     top: 93px;
-    margin: 0 0 0 62px
+    margin: 0 0 0 62px;
 }
 
 .owl-next:hover:before {
@@ -954,7 +954,7 @@ header {
     transform-origin: bottom;
     transition: transform 0.2s;
     top: -8px;
-    margin: 0 0 0 62px
+    margin: 0 0 0 62px;
 }
 
 .owl-controls {
@@ -1008,7 +1008,7 @@ header {
 
 .story_wrapper .owl-wrapper-outer {
     box-shadow: 0 0 20px rgba(117, 102, 84, 0.2);
-    background: #fff
+    background: #fff;
 }
 
 .story_wrapper {
@@ -1017,7 +1017,7 @@ header {
 
 .story_item {
     position: relative;
-    height: 400px
+    height: 400px;
 }
 
 .story_item img {
@@ -1042,7 +1042,7 @@ header {
     text-decoration: none !important;
     left: 50%;
     top: 50%;
-    margin: -10px 0 0 -10px
+    margin: -10px 0 0 -10px;
 }
 
 .youtube:before {
@@ -1052,7 +1052,7 @@ header {
     width: 1px;
     height: 15px;
     background: #fff;
-    transform: skew(-17deg, 0);
+    transform: skew(-17deg, 0deg);
     margin: -23px 0 0 27px
 }
 
@@ -1063,8 +1063,8 @@ header {
     width: 1px;
     height: 15px;
     background: #fff;
-    transform: skew(-17deg, 0);
-    margin: -4px 0 0 11px
+    transform: skew(-17deg, 0deg);
+    margin: -4px 0 0 11px;
 }
 
 .story_plane {
@@ -1074,7 +1074,7 @@ header {
     position: relative;
     z-index: 2;
     float: left;
-    display: flex
+    display: flex;
 }
 
 .story_back {
@@ -1087,7 +1087,7 @@ header {
     z-index: 0;
     position: absolute;
     width: 124px;
-    left: 0
+    left: 0;
 }
 
 .story_back:before {
@@ -1112,12 +1112,12 @@ header {
     z-index: 0;
     position: absolute;
     width: 124px;
-    left: 0
+    left: 0;
 }
 
 .story_img_plane:after {
     position: absolute;
-    background: #000
+    background: #000;
     z-index: 4;
     width: 10%;
     height: 400px;
@@ -1132,7 +1132,7 @@ header {
     position: relative;
     z-index: 4;
     padding: 30px 0;
-    margin: auto
+    margin: auto;
 }
 
 .story_txt p {
@@ -1150,7 +1150,7 @@ header {
     font: normal 300 14px/28px Roboto Condensed;
     position: relative;
     margin: 0 0 10px 0;
-    text-align: center;;
+    text-align: center;
     display: block;
 }
 
@@ -1160,10 +1160,10 @@ header {
     content: "";
     width: 1px;
     height: 15px;
-    transform: skew(-17deg, 0);
+    transform: skew(-17deg, 0deg);
     margin: -25px 0 0 20px;
     left: 50%;
-    opacity: 0.3
+    opacity: 0.3;
 }
 
 .story_title:after {
@@ -1172,7 +1172,7 @@ header {
     content: "";
     width: 1px;
     height: 15px;
-    transform: skew(-17deg, 0);
+    transform: skew(-17deg, 0deg);
     margin: -5px 0 0 -9px;
     left: 50%;
     opacity: 0.3
@@ -1186,7 +1186,7 @@ header {
     top: 50%;
     position: absolute;
     margin: -85px 0 0 0;
-    width: 100%
+    width: 100%;
 }
 
 /*# 8. Events*/
@@ -1201,16 +1201,16 @@ header {
 .registry a {
     display: inline-block;
     vertical-align: middle;
-    margin: 20px 5px 0
+    margin: 20px 5px 0;
 }
 
 .registry_wrapper {
-    margin: 30px 0 0 0
+    margin: 30px 0 0 0;
 }
 
 .registry .owl-buttons {
     display: none;
-    margin: -22px 0 0
+    margin: -22px 0 0;
 }
 
 /*# 10. RSVP*/
@@ -1229,11 +1229,11 @@ header {
 }
 
 .envelope p {
-    font: 16px/28px Roboto Condensed
+    font: 16px/28px Roboto Condensed;
 }
 
 .envelope h2 {
-    margin: 0 0 10px 0
+    margin: 0 0 10px 0;
 }
 
 .paper {
@@ -1248,12 +1248,12 @@ header {
     transition: 0.3s all ease-out;
     transition-delay: 0.5s;
     top: 0;
-    font: 14px/24px Roboto Condensed
+    font: 14px/24px Roboto Condensed;
 }
 
 .paper .paper_title {
     margin: 10px 0 30px 0;
-    font-size: 26px
+    font-size: 26px;
 }
 
 .paper .btn {
@@ -1270,7 +1270,7 @@ header {
     transition: 0.3s all ease-out;
     transition-delay: 0.5s;
     top: 650px;
-    opacity: 0
+    opacity: 0;
 }
 
 .env_top {
