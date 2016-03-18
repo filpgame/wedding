@@ -316,42 +316,25 @@
             <div class="photocamera"><span class="flaticon-slr2"></span></div>
 
             <div class="when_where_container opacity">
-                <h2><span>Where &amp;</span> When</h2>
+                <h2><span>Onde &amp;</span> Quando</h2>
 
                 <!-- Texts -->
                 <div class="pattern1"></div>
-                <div class="title1">The Historic</div>
-                <div class="title2">Redhouse Depot</div>
-                <div class="title3"><a href="https://goo.gl/maps/dhx42" target="_blank">
-                        320 Church Street <br/>Huntsville, Alabama</a><br/><i class="flaticon-map35"></i></div>
+                <div class="title1">Sítio Catavento</div>
+                <div class="title2"></div>
+                <div class="title3">
+                        Rodovia BR-101 Norte - Muribeca <br/>Serra, ES<br/><i class="flaticon-map35"></i>
+                </div>
 
                 <div class="pattern2"></div>
-                <div class="title1">5 o'clock</div>
-                <div class="title5">IN THE EVENING</div>
-                <div class="title4">September Nineteen<br>Two Thousand and Fifteen</div>
+                <div class="title1">Às 18 horas</div>
+                <div class="title4">07 de Janeiro de 2017</div>
+                <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA6L965mKtwARLyJacssHVj8&key=AIzaSyC2Ee6RqU5Btxuz55udgcMwyPEYyLv-ieY" allowfullscreen></iframe>
                 <div class="pattern3"></div>
             </div>
         </div>
     </section>
     <!-- When & Where End -->
-
-    <!-- Hotel Reservation -->
-    <section class="hotel" id="hotel">
-
-        <div class="container opacity">
-            <h2><span>Hotel</span> Reservation</h2>
-
-            <p>We have reserved a block of rooms at the: <b>Pointe Hilton Tapatio Cliffs Resort</b><br>
-                For reservations, please call: 800.811.1111<br>
-                Please mention you are a guest of the: Mallory & Matthew Wedding Group code: MM</p>
-
-            <p>To ensure room availability, please RSVP prior to: <b>september 10, 2015</b><br>
-                If you have any questions, feel free to email us at:
-                <a href="mailto:MatthewplusMallory@gmail.com">MatthewplusMallory@gmail.com</a></p>
-
-        </div>
-    </section>
-    <!-- Hotel Reservation End -->
 
 
     <!-- Events -->
@@ -486,7 +469,7 @@
     <!-- RSVP -->
     <section class="rsvp" id="rsvp">
         <div class="container">
-            <h2><span>Join</span> Our Party</h2>
+            <h2><span>Venha para </span>&nbsp;&nbsp;Nossa Festa!</h2>
 
             <div id="envelope" data-100-top="@class:active" data-200-bottom="@class: ">
                 <div class="envelope_front">
@@ -499,29 +482,24 @@
                 <div class="paper">
 
                     <!-- End Date of Reservation -->
-                    <div class="paper_title">Please RSVP by August 2nd</div>
+                    <div class="paper_title">Confirme sua Presença</div>
 
                     <!-- Form -->
-                    <div id="div_block_1">
+                    <form id="div_block_1">
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="name_block_1" placeholder="Your Name">
+                            <input type="text" class="form-control" id="name_block_1" placeholder="Seu Nome">
                         </div>
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="guest_block_1" placeholder="Your Guest's Name">
+                            <input type="text" class="form-control" id="email_block_1" placeholder="Telefone">
                         </div>
-                        <div class="txt_input">
-                            <input type="text" class="form-control" id="email_block_1" placeholder="Your E-mail">
-                        </div>
-                        <div class="txt_input">
-                            <input type="text" class="form-control" id="attending_block_1" placeholder="# Attending">
-                        </div>
-                        <input name="" type="submit" value="Send" class="btn btn-lg submit_block_1">
-
+                        <input type="submit" value="Enviar" class="btn btn-lg submit_block_1">
 
                         <!-- Form Additional text -->
-                        <p>We’re excited to see you! Any questions, just email us at:
-                            <a href="mailto:MatthewplusMallory@gmail.com">MatthewplusMallory@gmail.com</a></p>
-                    </div>
+                        <p>Estamos animados em ver você! Quaisquer Dúvidas,
+                            Envie-nos um email: <a href="mailto:lipesu@lipesu.com">lipesu@lipesu.com</a><br>
+                            Ou ligue para <a href="callto:+5527996956489">+55 (27) 99695-6489</a>
+                        </p>
+                    </form>
                 </div>
 
             </div>
@@ -588,7 +566,7 @@
     <!-- Gift Registry -->
     <section class="registry" id="registry">
         <div class="container">
-            <h2><span>Gift</span> Registry</h2>
+            <h2><span>Lista de </span> Presentes</h2>
 
             <p>What we want most for our wedding is to have our friends and family there to celebrate the occasion with us. <br>
                 So more than anything we’re simply grateful for your presence!</p>
@@ -611,7 +589,7 @@
         <div class="container">
 
             <!-- Thanks Text -->
-            <div class="thanks">Thanks for Visiting our Website</div>
+            <div class="thanks">Obrigado por visitar nosso site!</div>
             <div class="footer_txt">
 
 
@@ -622,7 +600,7 @@
                     <a href="#"><i class="fa fa-pinterest"></i></a>
                 </div>
 
-                <div class="title1">Matthew & Mallory</div>
+                <div class="title1">Felipe & Suellen</div>
                 <!-- Copyrights -->
                 <div class="copyrights">2015 Matthew & Mallory - One Page Wedding Template</div>
 

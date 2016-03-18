@@ -8,7 +8,6 @@
     });
 
     function send_form(type) {
-
         var name = $("input#name_" + type).val();
         if (name == "") {
             $("input#name_" + type).css({border: "1px solid red"});
@@ -21,25 +20,16 @@
             $("input#email_" + type).focus();
             return false;
         }
-        var guest = $("input#guest_" + type).val();
-        if (guest == "") {
-            $("input#guest_" + type).css({border: "1px solid red"});
-            $("input#guest_" + type).focus();
-            return false;
-        }
-        var attending = $("input#attending_" + type).val();
-        if (attending == "") {
-            $("input#attending_" + type).css({border: "1px solid red"});
-            $("input#attending_" + type).focus();
-            return false;
-        }
 
-        var dataString = '&name=' + name + '&email=' + email + '&guest=' + guest + '&attending=' + attending;
-        var form = $(this);
-        var str = form.serialize();
         $.ajax({
-            type: "POST", url: "mail/mail.php", data: dataString, success: function () {
-                $('#div_' + type).html("<div id='form_send_message'>Thank you for your request, we will contact you as soon as possible to confirm your booking.</div>", 1500);
+            type: "POST",
+            url: "mail/mail.php",
+            data: {
+                name:name,
+                email:email
+            },
+            success: function () {
+                $('#div_' + type).html("<div id='form_send_message'>Obrigado!, Nós entraremos em contato o mais rápido possível para confirmarmos sua presença!</div>", 1500);
             }
         });
     }
