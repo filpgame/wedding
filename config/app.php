@@ -159,7 +159,6 @@ return [
         /*
          * Libraries Service Providers
          */
-        \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
     ],
 
     /*
