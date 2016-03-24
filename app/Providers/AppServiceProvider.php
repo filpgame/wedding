@@ -14,6 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if (!is_readable(database_path('database.sqlite'))) {
+            file_put_contents(database_path('database.sqlite'), '');
+        }
         if ($this->app->environment('local')) {
             $this->app->register(IdeHelperServiceProvider::class);
         }

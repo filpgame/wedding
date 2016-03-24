@@ -229,7 +229,7 @@
     <!-- The Crew -->
     <section class="guests" id="guests">
         <div class="container">
-            <h2><span>Nossos</span> Bridal Party</h2>
+            <h2><span>Nossos</span> Padrinhos e Madrinhas</h2>
 
             <!-- Guest Wrapper -->
             <div class="guest_wrapper">
