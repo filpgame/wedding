@@ -25,7 +25,7 @@
 \Route::group(['middleware' => ['web']], function (\Illuminate\Routing\Router $router) {
     $router->get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
     \Route::auth();
-
+    $router->post('/rsvp', ['as' => 'rsvp', 'uses' => 'InvitesController@store']);
     \Route::group(['middleware' => ['adm']], function (\Illuminate\Routing\Router $router) {
         Route::resource('invites', 'InvitesController');
         Route::resource('people', 'PeopleController');

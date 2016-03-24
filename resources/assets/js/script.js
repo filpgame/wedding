@@ -1,38 +1,37 @@
 ﻿$(document).ready(function () {
     "use strict";
-
     /*RSVP Form*/
-    $(".submit_block_1").on("click", function (e) {
-        send_form('block_1');
-        return false;
-    });
-
-    function send_form(type) {
-        var name = $("input#name_" + type).val();
-        if (name == "") {
-            $("input#name_" + type).css({border: "1px solid red"});
-            $("input#name_" + type).focus();
+    $("#div_block_1").on("submit", function (e) {
+        e.preventDefault();
+        var form = $(this);
+        var name = $(this).find("input[name='name']");
+        var phone = $(this).find("input[name='phone']");
+        var email = $(this).find("input[name='email']");
+        if (name.val().trim() == "") {
+            name.css({border: "1px solid red"});
+            name.focus();
             return false;
         }
-        var email = $("input#email_" + type).val();
-        if (email == "") {
-            $("input#email_" + type).css({border: "1px solid red"});
-            $("input#email_" + type).focus();
+        if (phone.val().trim() == "") {
+            phone.css({border: "1px solid red"});
+            phone.focus();
             return false;
         }
-
         $.ajax({
             type: "POST",
-            url: "mail/mail.php",
+            url: "/rsvp",
             data: {
-                name:name,
-                email:email
+                name: name.val(),
+                phone: phone.val(),
+                email: '',
+                '_token': $(this).find("input[name='_token']").val()
             },
-            success: function () {
-                $('#div_' + type).html("<div id='form_send_message'>Obrigado!, Nós entraremos em contato o mais rápido possível para confirmarmos sua presença!</div>", 1500);
+            success: function (data) {
+                console.log("felipe");
+                form.html("<div id='form_send_message'>Obrigado!, Nós entraremos em contato o mais rápido possível para confirmarmos sua presença!</div>", 1500);
             }
         });
-    }
+    });
 
     /*ScrollR */
     if ($(window).width() > 1024) {
@@ -155,6 +154,6 @@
     });
 
     /* Refresh ScrollR */
-    s.refresh($(".guest_wrapper, .our_story"));
+    //s.refresh($(".guest_wrapper, .our_story"));
 
-})(jQuery);
+});

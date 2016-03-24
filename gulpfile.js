@@ -22,7 +22,7 @@ elixir(function (mix) {
             'skrollr.min.js',
             'prefixfree.min.js',
             'jquery.firefly-0.3-min.js',
-            //'jquery.mousewheel.min.js',
+            'jquery.mousewheel.min.js',
             'script.js'
         ])
         .styles([

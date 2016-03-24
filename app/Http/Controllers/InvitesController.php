@@ -42,19 +42,22 @@ class InvitesController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, ['name' => 'required', 'email' => 'required', ]);
+        $this->validate($request, ['name' => 'required', 'phone' => 'required']);
 
         Invite::create($request->all());
 
         Session::flash('flash_message', 'Invite added!');
-
-        return redirect('invites');
+        if ($request->ajax()) {
+            return ["status"=>true];
+        } else {
+            return redirect('invites');
+        }
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      *
      * @return Response
      */
@@ -68,7 +71,7 @@ class InvitesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      *
      * @return Response
      */
@@ -82,13 +85,13 @@ class InvitesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  int  $id
+     * @param  int $id
      *
      * @return Response
      */
     public function update($id, Request $request)
     {
-        $this->validate($request, ['name' => 'required', 'email' => 'required', ]);
+        $this->validate($request, ['name' => 'required', 'email' => 'required',]);
 
         $invite = Invite::findOrFail($id);
         $invite->update($request->all());
@@ -101,7 +104,7 @@ class InvitesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      *
      * @return Response
      */

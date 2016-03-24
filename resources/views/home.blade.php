@@ -485,12 +485,13 @@
                     <div class="paper_title">Confirme sua Presença</div>
 
                     <!-- Form -->
-                    <form id="div_block_1">
+                    <form id="div_block_1" action="{{route('rsvp')}}">
+                        {{csrf_field()}}
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="name_block_1" placeholder="Seu Nome">
+                            <input type="text" class="form-control" id="name_block_1" name="name" placeholder="Seu Nome">
                         </div>
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="email_block_1" placeholder="Telefone">
+                            <input type="text" class="form-control" id="email_block_1" name="phone" placeholder="Telefone">
                         </div>
                         <input type="submit" value="Enviar" class="btn btn-lg submit_block_1">
 
