@@ -154,6 +154,6 @@
     });
 
     /* Refresh ScrollR */
-    //s.refresh($(".guest_wrapper, .our_story"));
+    s.refresh($(".guest_wrapper, .our_story"));
 
 });
