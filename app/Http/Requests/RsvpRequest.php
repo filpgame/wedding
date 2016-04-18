@@ -22,7 +22,7 @@ class RsvpRequest extends Request
     public function rules()
     {
         return [
-            //
+            "email" => "email"
         ];
     }
 }
