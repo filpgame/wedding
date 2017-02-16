@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+    'name' => 'Lipe & Su',
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -159,8 +159,9 @@ return [
         /*
          * Libraries Service Providers
          */
+        Collective\Html\HtmlServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class
     ],
 
     /*
