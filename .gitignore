@@ -10,3 +10,4 @@ node_modules/
 public/js
 public/css
 composer.phar
+.phpstorm.meta.php
