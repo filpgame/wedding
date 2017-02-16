@@ -9,3 +9,4 @@ node_modules/
 .env.example
 public/js
 public/css
+composer.phar
