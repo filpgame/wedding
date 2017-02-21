@@ -1,11 +1,4 @@
 const {mix} = require('laravel-mix');
-// hack for Ubuntu on Windows
-try {
-    require('os').networkInterfaces();
-}
-catch (e) {
-    require('os').networkInterfaces = () => ({});
-}
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -16,32 +9,34 @@ catch (e) {
  | file for our application, as well as publishing vendor resources.
  |
  */
+let baseJsDir = "resources/assets/js/";
+let baseCssDir = "resources/assets/css/";
 
 mix.js([
-    'jquery-1.11.0.min.js',
-    'jquery.plugin.min.js',
-    'jquery.colorbox-min.js',
-    'owl.carousel.min.js',
-    'bootstrap.min.js',
-    'jquery.countdown.min.js',
-    'skrollr.min.js',
-    'prefixfree.min.js',
-    'jquery.firefly-0.3-min.js',
-    'jquery.mousewheel.min.js',
-    'script.js',
-    'app.js'
-])
+    baseJsDir + 'jquery-1.11.0.min.js',
+    baseJsDir + 'jquery.plugin.min.js',
+    baseJsDir + 'jquery.colorbox-min.js',
+    baseJsDir + 'owl.carousel.min.js',
+    baseJsDir + 'bootstrap.min.js',
+    baseJsDir + 'jquery.countdown.min.js',
+    baseJsDir + 'skrollr.min.js',
+    baseJsDir + 'prefixfree.min.js',
+    baseJsDir + 'jquery.firefly-0.3-min.js',
+    baseJsDir + 'jquery.mousewheel.min.js',
+    baseJsDir + 'script.js',
+    baseJsDir + 'app.js'
+], 'public/js/all.js')
     .combine([
-        "bootstrap.css",
-        "bootstrap-theme.css",
-        "font-awesome.min.css",
-        "flaticon/flaticon.css",
-        "owl.carousel.css",
-        "owl.transitions.css",
-        "colorbox.css",
+        baseCssDir + "bootstrap.css",
+        baseCssDir + "bootstrap-theme.css",
+        baseCssDir + "font-awesome.min.css",
+        baseCssDir + "flaticon/flaticon.css",
+        baseCssDir + "owl.carousel.css",
+        baseCssDir + "owl.transitions.css",
+        baseCssDir + "colorbox.css",
+        baseCssDir + "style.css",
+        baseCssDir + "brown.css"
         //"jquery.scrollSections.css",
-        "style.css",
-        "brown.css"
-    ])
+    ], 'public/css/all.css')
     .copy('resources/assets/css/flaticon', 'public/css/flaticon')
-    // .browserSync({'proxy': 'dev.lipesu.com'});
+// .browserSync({'proxy': 'dev.lipesu.com'});

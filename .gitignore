@@ -7,7 +7,5 @@ node_modules/
 # Laravel 5 & Lumen specific
 .env
 .env.example
-public/js
-public/css
 composer.phar
 .phpstorm.meta.php
