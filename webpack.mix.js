@@ -15,16 +15,7 @@ let baseJsDir = "resources/assets/js/";
 let baseCssDir = "resources/assets/css/";
 let baseFontDir = "resources/assets/fonts/";
 
-mix.js([
-    baseJsDir + 'jquery.plugin.min.js',
-    baseJsDir + 'jquery.countdown.min.js',
-    baseJsDir + 'jquery.colorbox-min.js',
-    baseJsDir + 'owl.carousel.min.js',
-    baseJsDir + 'bootstrap.min.js',
-    baseJsDir + 'prefixfree.min.js',
-    baseJsDir + 'jquery.firefly-0.3-min.js',
-    baseJsDir + 'script.js',
-], 'public/js/all.js').combine([
+mix.combine([
     baseCssDir + "bootstrap.css",
     baseCssDir + "bootstrap-theme.css",
     baseCssDir + "font-awesome.min.css",
@@ -37,5 +28,3 @@ mix.js([
 ], 'public/css/all.css')
     .copy(baseCssDir + 'flaticon', 'public/css')
     .copy(baseFontDir + 'font-awesome', 'public/fonts')
-    .copy(baseJsDir + 'jquery-1.11.0.min.js', 'public/js/jquery-1.11.0.min.js')
-    .copy(baseJsDir + 'skrollr.min.js', 'public/js/skrollr.min.js')

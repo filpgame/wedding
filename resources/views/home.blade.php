@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -15,8 +15,6 @@
 
 <body>
 
-
-<!-- Header -->
 <header>
     <div class="header_plane anim"></div>
 
@@ -37,24 +35,37 @@
                     <li><a href="#guests">Padrinhos e Madrinhas</a></li>
                     <li><a href="#when_where">Quando & Onde</a></li>
                     <li><a href="#hotel">Como Chegar</a></li>
+                    <li><a href="#events">Momentos Marcantes</a></li>
                     <li><a href="#rsvp">Confirmar Presença</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#gallery">Nossa Galeria</a></li>
                     <li><a href="#registry">Lista de Presentes</a></li>
                 </ul>
             </div>
             <div class="sub_img anim"></div>
         </div>
     </div>
+    <!-- Submenu End -->
+
+    <!-- Social Buttons -->
+    <div class="header_social">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+    </div>
 
 </header>
+<!-- Header End -->
 
 <div class="page">
 
-    <section class="home_intro white_txt parallax2" data-image="http://placehold.it/1920x800">
+    <!-- Intro -->
+    <section class="home_intro white_txt parallax2" data-image="{{$picture}}">
         <div class="home_txt" data-0="opacity:1" data-top-bottom="opacity:0">
 
-            <div class="title1 title1_2">Vamos nos Casar!!</div>
-            <div class="bullet"><span>17 <b>06</b></span></div>
+            <!-- Intro Text -->
+
+            <div class="title1 title1_2">Vamos Casar!</div>
+            <div class="bullet"><span>07 <b>01</b></span></div>
             <div class="title0">2017</div>
             <a href="#married" class="intro_down"><span><i class="fa fa-angle-down"></i></span></a>
         </div>
@@ -73,11 +84,10 @@
             </div>
 
             <div class="married_txt" data-bottom="opacity:0" data-center="opacity:1">
-                <h2><span>You're</span> Invited</h2>
-                On the 19rd of September, 2015<br>
-                <b>Matthew Carter Mitchell & Mallory Brooke Laughlin</b><br>
-                eloped in Tucson, AZ.<br>
-                <a href="#rsvp" class="btn go">RSRP NOW</a>
+                <h2><span>Você está</span> Convidado!</h2>
+                Dia 07 de Janeiro de 2017<br>
+                <b>Felipe Rodrigues & Suellen Leite</b><br>
+                <a href="#rsvp" class="btn go">CONFIRME JÁ</a>
 
                 <div class="married_coundown"></div>
                 <div class="double_arrow"></div>
@@ -89,7 +99,7 @@
 
     <!-- Story -->
     <section class="our_story" id="our_story">
-        <h2><span>Our</span> Story</h2>
+        <h2><span>Nossa</span> História</h2>
 
         <!-- Wrapper -->
         <div class="story_wrapper">
@@ -216,7 +226,7 @@
     <!-- The Crew -->
     <section class="guests" id="guests">
         <div class="container">
-            <h2><span>Our</span> Bridal Party</h2>
+            <h2><span>Nossos</span> Padrinhos e Madrinhas</h2>
 
             <!-- Guest Wrapper -->
             <div class="guest_wrapper">
@@ -316,30 +326,12 @@
                 <div class="pattern2"></div>
                 <div class="title1">Às 18 horas</div>
                 <div class="title4">07 de Janeiro de 2017</div>
-                <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA6L965mKtwARLyJacssHVj8&key=AIzaSyBGgY4L1QO_M5uvzZwYXKaf24UIlBbdL94" allowfullscreen></iframe>
+                <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA6L965mKtwARLyJacssHVj8&key=AIzaSyC2Ee6RqU5Btxuz55udgcMwyPEYyLv-ieY" allowfullscreen></iframe>
                 <div class="pattern3"></div>
             </div>
         </div>
     </section>
     <!-- When & Where End -->
-
-    <!-- Hotel Reservation -->
-    <section class="hotel" id="hotel">
-
-        <div class="container opacity">
-            <h2><span>Hotel</span> Reservation</h2>
-
-            <p>We have reserved a block of rooms at the: <b>Pointe Hilton Tapatio Cliffs Resort</b><br>
-                For reservations, please call: 800.811.1111<br>
-                Please mention you are a guest of the: Mallory & Matthew Wedding Group code: MM</p>
-
-            <p>To ensure room availability, please RSVP prior to: <b>september 10, 2015</b><br>
-                If you have any questions, feel free to email us at:
-                <a href="mailto:MatthewplusMallory@gmail.com">MatthewplusMallory@gmail.com</a></p>
-
-        </div>
-    </section>
-    <!-- Hotel Reservation End -->
 
 
     <!-- Events -->
@@ -474,7 +466,7 @@
     <!-- RSVP -->
     <section class="rsvp" id="rsvp">
         <div class="container">
-            <h2><span>Join</span> Our Party</h2>
+            <h2><span>Venha para </span>&nbsp;&nbsp;Nossa Festa!</h2>
 
             <div id="envelope" data-100-top="@class:active" data-200-bottom="@class: ">
                 <div class="envelope_front">
@@ -487,29 +479,25 @@
                 <div class="paper">
 
                     <!-- End Date of Reservation -->
-                    <div class="paper_title">Please RSVP by August 2nd</div>
+                    <div class="paper_title">Confirme sua Presença</div>
 
                     <!-- Form -->
-                    <div id="div_block_1">
+                    <form id="div_block_1" action="{{route('rsvp')}}">
+                        {{csrf_field()}}
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="name_block_1" placeholder="Your Name">
+                            <input type="text" class="form-control" id="name_block_1" name="name" placeholder="Seu Nome">
                         </div>
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="guest_block_1" placeholder="Your Guest's Name">
+                            <input type="text" class="form-control" id="email_block_1" name="phone" placeholder="Telefone">
                         </div>
-                        <div class="txt_input">
-                            <input type="text" class="form-control" id="email_block_1" placeholder="Your E-mail">
-                        </div>
-                        <div class="txt_input">
-                            <input type="text" class="form-control" id="attending_block_1" placeholder="# Attending">
-                        </div>
-                        <input name="" type="submit" value="Send" class="btn btn-lg submit_block_1">
-
+                        <input type="submit" value="Enviar" class="btn btn-lg submit_block_1">
 
                         <!-- Form Additional text -->
-                        <p>We’re excited to see you! Any questions, just email us at:
-                            <a href="mailto:MatthewplusMallory@gmail.com">MatthewplusMallory@gmail.com</a></p>
-                    </div>
+                        <p>Estamos animados em ver você! Quaisquer Dúvidas,
+                            Envie-nos um email: <a href="mailto:lipesu@lipesu.com">lipesu@lipesu.com</a><br>
+                            Ou ligue para <a href="callto:+5527996956489">+55 (27) 99695-6489</a>
+                        </p>
+                    </form>
                 </div>
 
             </div>
@@ -576,17 +564,14 @@
     <!-- Gift Registry -->
     <section class="registry" id="registry">
         <div class="container">
-            <h2><span>Gift</span> Registry</h2>
+            <h2><span>Lista de </span> Presentes</h2>
 
-            <p>What we want most for our wedding is to have our friends and family there to celebrate the occasion with us. <br>
-                So more than anything we’re simply grateful for your presence!</p>
-            <p>If you would like to get us something, we’d love that too...you can find our registries here:</p>
+            <p>O que nós mais queremos para nosso casamento é ter nossos amigos e família presentes para celebrar esse momento único conosco. <br>
+                Então antes de tudo nós seremos totalmente gratos com a sua preseça!</p>
+            <p>Se você gostaria de nos dar algo de presente, nós também vamos amar! Você encontra nossa lista aqui:</p>
 
             <!-- Logos & Links -->
             <div class="registry_wrapper">
-                <a href="#"><img src="http://placehold.it/250x70" alt="Partners"></a>
-                <a href="#"><img src="http://placehold.it/250x70" alt="Partners"></a>
-                <a href="#"><img src="http://placehold.it/250x70" alt="Partners"></a>
                 <a href="#"><img src="http://placehold.it/250x70" alt="Partners"></a>
             </div>
         </div>
@@ -599,7 +584,7 @@
         <div class="container">
 
             <!-- Thanks Text -->
-            <div class="thanks">Thanks for Visiting our Website</div>
+            <div class="thanks">Obrigado por visitar nosso site!</div>
             <div class="footer_txt">
 
 
@@ -610,17 +595,33 @@
                     <a href="#"><i class="fa fa-pinterest"></i></a>
                 </div>
 
-                <div class="title1">Lipe & Su</div>
+                <div class="title1">Felipe & Suellen</div>
                 <!-- Copyrights -->
-                <div class="copyrights">2017 Lipe & Su</div>
+                <div class="copyrights">2015 Matthew & Mallory - One Page Wedding Template</div>
 
             </div>
         </div>
     </section>
 
+
     <script src="{{asset('js/jquery-1.11.0.min.js')}}"></script>
+    <!-- CountDown JS -->
+    <script type="text/javascript" src="{{asset('js/jquery.plugin.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.countdown.min.js')}}"></script>
+    <!-- ColorBox JS -->
+    <script src="{{asset('js/jquery.colorbox-min.js')}}"></script>
+    <!-- OWL Carousel JS -->
+    <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <!-- ScrollR JS -->
     <script src="{{asset('js/skrollr.min.js')}}"></script>
-    <script src="{{asset('js/all.js')}}"></script>
+    <!-- PrefixFree -->
+    <script src="{{asset('js/prefixfree.min.js')}}"></script>
+    <!-- FireFly JS -->
+    <script src="{{asset('js/jquery.firefly-0.3-min.js')}}"></script>
+    <!-- Theme JS -->
+    <script src="{{asset('js/script.js')}}"></script>
 </div>
 
 </body>
