@@ -7,10 +7,10 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/all.css')}}"/>
 
-    <!-- Google Fonts -->
+    {{-- Google Fonts --}}
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
-
+    @include('scripts')
 </head>
 
 <body>
@@ -18,24 +18,21 @@
 <header>
     <div class="header_plane anim"></div>
 
-    <!-- Menu Button -->
+    {{-- Menu Button --}}
     <a class="main_menu_btn">
         <span class="line line1"></span>
         <span class="line line2"></span>
         <span class="line line3"></span>
     </a>
 
-
-    <!-- Submenu -->
+    {{-- Submenu --}}
     <div class="main_menu_block">
         <div class="menu_wrapper">
             <div class="sub_menu anim">
                 <ul>
-                    <li><a href="#our_story">Nossa História</a></li>
                     <li><a href="#guests">Padrinhos e Madrinhas</a></li>
                     <li><a href="#when_where">Quando & Onde</a></li>
                     <li><a href="#hotel">Como Chegar</a></li>
-                    <li><a href="#events">Momentos Marcantes</a></li>
                     <li><a href="#rsvp">Confirmar Presença</a></li>
                     <li><a href="#gallery">Nossa Galeria</a></li>
                     <li><a href="#registry">Lista de Presentes</a></li>
@@ -44,25 +41,18 @@
             <div class="sub_img anim"></div>
         </div>
     </div>
-    <!-- Submenu End -->
-
-    <!-- Social Buttons -->
-    <div class="header_social">
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-pinterest"></i></a>
-    </div>
+    {{-- Submenu End --}}
 
 </header>
-<!-- Header End -->
+{{-- Header End --}}
 
 <div class="page">
 
-    <!-- Intro -->
+    {{-- Intro --}}
     <section class="home_intro white_txt parallax2" data-image="{{$picture}}">
         <div class="home_txt" data-0="opacity:1" data-top-bottom="opacity:0">
 
-            <!-- Intro Text -->
+            {{-- Intro Text --}}
 
             <div class="title1 title1_2">Vamos Casar!</div>
             <div class="bullet"><span>07 <b>01</b></span></div>
@@ -71,15 +61,15 @@
         </div>
         <div class="into_firefly"></div>
     </section>
-    <!-- Intro End -->
+    {{-- Intro End --}}
 
-    <!-- Married -->
+    {{-- Married --}}
     <section class="married clearfix" id="married">
         <div class="container">
-            <div class="im1 parallax" data-bottom="left:20%" data-center="left:0" data-image="http://placehold.it/302x302">
+            <div class="im1 parallax" data-bottom="left:20%" data-center="left:0" data-image="{{asset('pictures/felipe-profile.jpg')}}">
                 <div class="im_arrows"></div>
             </div>
-            <div class="im2 parallax" data-bottom="right:20%" data-center="right:0" data-image="http://placehold.it/302x302">
+            <div class="im2 parallax" data-bottom="right:20%" data-center="right:0" data-image="{{asset('pictures/suellen-profile.jpg')}}">
                 <div class="im_arrows"></div>
             </div>
 
@@ -94,228 +84,52 @@
             </div>
         </div>
     </section>
-    <!-- Married End -->
+    {{-- Married End --}}
 
-
-    <!-- Story -->
-    <section class="our_story" id="our_story">
-        <h2><span>Nossa</span> História</h2>
-
-        <!-- Wrapper -->
-        <div class="story_wrapper">
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            The day we met
-                            <i>03.12.2013</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <a class="youtube cboxElement" href="http://www.youtube.com/embed/hEowkXOP_Wg?rel=0">
-                        <i class="flaticon-play102"></i></a>
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            Our first holiday
-                            <i>03.01.2014</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            First dinner together
-                            <i>12.05.2014</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            The Proposal
-                            <i>24.08.2014</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            Here comes the baby
-                            <i>10.01.2015</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            Bridesmaids
-                            <i>03.02.2015</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- The Crew -->
+    {{-- The Crew --}}
     <section class="guests" id="guests">
         <div class="container">
             <h2><span>Nossos</span> Padrinhos e Madrinhas</h2>
 
-            <!-- Guest Wrapper -->
+
             <div class="guest_wrapper">
-                <!-- Best Man & Maid of Honor  -->
-
-
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="Best Man"></div>
-                    <div class="guest_title"><span>Best Man</span> Maxx Frazer</div>
-                    <i class="flaticon-balloon14"></i> Best Haircut
-
-                </div>
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="Maid Of Honor"></div>
-                    <div class="guest_title"><span>Maid of Honor</span> Alina Gilman</div>
-                    <i class="flaticon-balloon14"></i> Made in Georgia
-
-                </div>
-
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="James"></div>
-                    <div class="guest_title"><span>Groomsman</span> James Petersen</div>
-                    <i class="flaticon-balloon14"></i> MNTN
-
-                </div>
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="Justin"></div>
-                    <div class="guest_title"><span>Groomsman</span> Justin Allen</div>
-                    <i class="flaticon-balloon14"></i> Hello Brooklyn
-
-                </div>
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="Suesen"></div>
-                    <div class="guest_title"><span>Bridesmaid</span> Suisen Cram</div>
-                    <i class="flaticon-balloon14"></i> Yes, I’m from Iowa
-
-                </div>
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="Kate"></div>
-                    <div class="guest_title"><span>Bridesmaid</span> Kate Gaffney</div>
-                    <i class="flaticon-balloon14"></i> O-H-I-O
-
-                </div>
-
-
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="Nick"></div>
-                    <div class="guest_title"><span>Groomsman</span> Nick Barker</div>
-                    <i class="flaticon-balloon14"></i> Jimmy Nickles
-
-                </div>
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="Nate"></div>
-                    <div class="guest_title"><span>Groomsman</span> Nate Lourenco</div>
-                    <i class="flaticon-balloon14"></i> Ivan Drago
-
-                </div>
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="Madison"></div>
-                    <div class="guest_title"><span>Bridesmaid</span> Madison Le</div>
-                    <i class="flaticon-balloon14"></i> Whose Garden?
-
-                </div>
-                <div class="guest_item">
-                    <div class="guest_photo"><img src="http://placehold.it/200x200" alt="Lydia"></div>
-                    <div class="guest_title"><span>Bridesmaid</span> Lydia Cram</div>
-                    <i class="flaticon-balloon14"></i> Sister. Sister
-
-                </div>
-
+                {{-- Best Man & Maid of Honor  --}}
+                @foreach($bestMen as $man)
+                    <div class="guest_item">
+                        <div class="guest_photo"><img src="{{getFacebookPicture($man["picture"])}}" alt="Best Man"></div>
+                        <div class="guest_title"><span>Best Man</span> {{$man["name"]}}</div>
+                        <i class="flaticon-balloon14"></i> Top
+                    </div>
+                @endforeach
             </div>
-            <!-- Guest Wrapper End -->
+
+
+            <div class="guest_wrapper">
+                @foreach($bridesMaid as $maid)
+                    <div class="guest_item">
+                        <div class="guest_photo"><img src="{{getFacebookPicture($maid["picture"])}}" alt="Best Man"></div>
+                        <div class="guest_title"><span>Best Man</span> {{$maid["name"]}}</div>
+                        <i class="flaticon-balloon14"></i> Top
+                    </div>
+                @endforeach
+            </div>
         </div>
     </section>
-    <!-- The Crew End -->
+    {{-- The Crew End --}}
 
 
-    <!-- When & Where -->
-    <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('images/pictures/IMG_20160214_180815345.jpg')}}" data-bottom-top="opacity:0;" data-bottom="opacity:1;">
+    {{-- When & Where --}}
+    <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('pictures/catavento.jpg')}}" data-bottom-top="opacity:0;" data-bottom="opacity:1;">
         <div class="over"></div>
         <div class="container">
 
-            <!-- Photocamera Icon -->
+            {{-- Photocamera Icon --}}
             <div class="photocamera"><span class="flaticon-slr2"></span></div>
 
             <div class="when_where_container opacity">
                 <h2><span>Onde &amp;</span> Quando</h2>
 
-                <!-- Texts -->
+                {{-- Texts --}}
                 <div class="pattern1"></div>
                 <div class="title1">Sítio Catavento</div>
                 <div class="title2"></div>
@@ -324,146 +138,16 @@
                 </div>
 
                 <div class="pattern2"></div>
-                <div class="title1">Às 18 horas</div>
+                <div class="title1">Às 15h30</div>
                 <div class="title4">07 de Janeiro de 2017</div>
-                <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA6L965mKtwARLyJacssHVj8&key=AIzaSyC2Ee6RqU5Btxuz55udgcMwyPEYyLv-ieY" allowfullscreen></iframe>
+                <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA6L965mKtwARLyJacssHVj8&key=AIzaSyBYF9dF3HJPC7_jJsn8Bsb-puah8kpuRcQ" allowfullscreen></iframe>
                 <div class="pattern3"></div>
             </div>
         </div>
     </section>
-    <!-- When & Where End -->
+    {{-- When & Where End --}}
 
-
-    <!-- Events -->
-    <section class="our_story events" id="events">
-        <h2><span>Our</span> Events</h2>
-
-        <!-- Wrapper -->
-        <div class="story_wrapper">
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            The day we met
-                            <i>03.12.2013</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <a class="youtube cboxElement" href="http://www.youtube.com/embed/hEowkXOP_Wg?rel=0">
-                        <i class="flaticon-play102"></i></a>
-                    <div class="story_img_plane"></div>
-                </div>
-
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            Our first holiday
-                            <i>03.12.2013</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            First dinner together
-                            <i>03.12.2013</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            The Proposal
-                            <i>03.12.2013</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            Here comes the baby
-                            <i>03.12.2013</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div class="story_item">
-                <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                    <div class="story_img_plane"></div>
-                </div>
-                <div class="story_plane">
-                    <div class="story_back"></div>
-                    <div class="story_txt">
-                        <div class="story_title">
-                            Bridesmaids
-                            <i>03.12.2013</i>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco.
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <!-- Events End -->
-
-    <!-- RSVP -->
+    {{-- RSVP --}}
     <section class="rsvp" id="rsvp">
         <div class="container">
             <h2><span>Venha para </span>&nbsp;&nbsp;Nossa Festa!</h2>
@@ -478,10 +162,10 @@
 
                 <div class="paper">
 
-                    <!-- End Date of Reservation -->
+                    {{-- End Date of Reservation --}}
                     <div class="paper_title">Confirme sua Presença</div>
 
-                    <!-- Form -->
+                    {{-- Form --}}
                     <form id="div_block_1" action="{{route('rsvp')}}">
                         {{csrf_field()}}
                         <div class="txt_input">
@@ -492,7 +176,7 @@
                         </div>
                         <input type="submit" value="Enviar" class="btn btn-lg submit_block_1">
 
-                        <!-- Form Additional text -->
+                        {{-- Form Additional text --}}
                         <p>Estamos animados em ver você! Quaisquer Dúvidas,
                             Envie-nos um email: <a href="mailto:lipesu@lipesu.com">lipesu@lipesu.com</a><br>
                             Ou ligue para <a href="callto:+5527996956489">+55 (27) 99695-6489</a>
@@ -503,10 +187,10 @@
             </div>
         </div>
     </section>
-    <!-- RSVP End -->
+    {{-- RSVP End --}}
 
 
-    <!-- Gallery -->
+    {{-- Gallery --}}
     <section class="gallery" id="gallery">
         <h2><span>Our</span> Gallery</h2>
         <div class="gallery_wrapper">
@@ -559,9 +243,9 @@
             </div>
         </div>
     </section>
-    <!-- Gallery End -->
+    {{-- Gallery End --}}
 
-    <!-- Gift Registry -->
+    {{-- Gift Registry --}}
     <section class="registry" id="registry">
         <div class="container">
             <h2><span>Lista de </span> Presentes</h2>
@@ -570,25 +254,25 @@
                 Então antes de tudo nós seremos totalmente gratos com a sua preseça!</p>
             <p>Se você gostaria de nos dar algo de presente, nós também vamos amar! Você encontra nossa lista aqui:</p>
 
-            <!-- Logos & Links -->
-            <div class="registry_wrapper">
-                <a href="#"><img src="http://placehold.it/250x70" alt="Partners"></a>
+            {{-- Logos & Links --}}
+            <div>
+                <a target="_blank" href="{{route('presente')}}"><img src="http://www.mundodapromocao.com.br/wp-content/uploads/2016/05/Logo-Cupom-de-Desconto-Pontofrio.png" alt="Presente" width="420" height="100"></a>
             </div>
         </div>
     </section>
-    <!-- Gift Registry End -->
+    {{-- Gift Registry End --}}
 
-    <!-- Footer -->
+    {{-- Footer --}}
     <section class="footer white_txt parallax" id="footer" data-image="http://placehold.it/1920x300">
         <div class="over"></div>
         <div class="container">
 
-            <!-- Thanks Text -->
+            {{-- Thanks Text --}}
             <div class="thanks">Obrigado por visitar nosso site!</div>
             <div class="footer_txt">
 
 
-                <!-- Social Buttons -->
+                {{-- Social Buttons --}}
                 <div class="footer_social">
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -596,7 +280,7 @@
                 </div>
 
                 <div class="title1">Felipe & Suellen</div>
-                <!-- Copyrights -->
+                {{-- Copyrights --}}
                 <div class="copyrights">2015 Matthew & Mallory - One Page Wedding Template</div>
 
             </div>
@@ -605,22 +289,22 @@
 
 
     <script src="{{asset('js/jquery-1.11.0.min.js')}}"></script>
-    <!-- CountDown JS -->
+    {{-- CountDown JS --}}
     <script type="text/javascript" src="{{asset('js/jquery.plugin.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/jquery.countdown.min.js')}}"></script>
-    <!-- ColorBox JS -->
+    {{-- ColorBox JS --}}
     <script src="{{asset('js/jquery.colorbox-min.js')}}"></script>
-    <!-- OWL Carousel JS -->
+    {{-- OWL Carousel JS --}}
     <script src="{{asset('js/owl.carousel.min.js')}}"></script>
-    <!-- Bootstrap JS -->
+    {{-- Bootstrap JS --}}
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <!-- ScrollR JS -->
+    {{-- ScrollR JS --}}
     <script src="{{asset('js/skrollr.min.js')}}"></script>
-    <!-- PrefixFree -->
+    {{-- PrefixFree --}}
     <script src="{{asset('js/prefixfree.min.js')}}"></script>
-    <!-- FireFly JS -->
+    {{-- FireFly JS --}}
     <script src="{{asset('js/jquery.firefly-0.3-min.js')}}"></script>
-    <!-- Theme JS -->
+    {{-- Theme JS --}}
     <script src="{{asset('js/script.js')}}"></script>
 </div>
 

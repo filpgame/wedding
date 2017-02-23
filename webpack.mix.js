@@ -11,7 +11,6 @@ const {mix} = require('laravel-mix');
  |
  */
 
-let baseJsDir = "resources/assets/js/";
 let baseCssDir = "resources/assets/css/";
 let baseFontDir = "resources/assets/fonts/";
 
