@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 \Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 \Route::post('/rsvp', ['as' => 'rsvp', 'uses' => 'HomeController@rsvp']);
+\Route::post('/lista', ['as' => 'rsvp', 'uses' => 'HomeController@redirectToPontofrio']);
+\Route::post('/quero', ['as' => 'rsvp', 'uses' => 'HomeController@redirectToPontofrio']);
+\Route::post('/presente', ['as' => 'rsvp', 'uses' => 'HomeController@redirectToPontofrio']);
