@@ -1,10 +1,22 @@
 ﻿$(document).ready(function () {
     "use strict";
+    mixpanel.track("Page View");
 
     /*RSVP Form*/
     $("#form_rsvp").submit(function (e) {
         e.preventDefault();
+        var name = $(this).find("input[name=name]").val();
+        var phone = $(this).find("input[name=phone]").val();
 
+        mixpanel.people.set({
+            "Nome": name,
+            "Telefone": phone
+        });
+
+        mixpanel.track("Enviou RSVP", {
+            "Nome": name,
+            "Telefone": phone
+        });
         return false;
     });
 
@@ -24,8 +36,9 @@
     /*Main Menu Button */
     $('.main_menu_btn').click(function (e) {
         $(this).toggleClass('main_menu_btn_open');
-        $('.main_menu_block').toggleClass('main_menu_block_open').fadeToggle();
-        $('.main_menu_block').find('.menu_wrapper').toggleClass('active');
+        var mainMenuBlock = $('.main_menu_block');
+        mainMenuBlock.toggleClass('main_menu_block_open').fadeToggle();
+        mainMenuBlock.find('.menu_wrapper').toggleClass('active');
         $('header .anim').toggleClass('active');
         e.preventDefault();
     });
@@ -35,20 +48,6 @@
         var image = $(this).attr('data-image');
         if (image) {
             $(this).css('background-image', 'url(' + image + ')');
-        }
-    });
-
-    /*ColorBox*/
-    if ($(window).width() >= 760) {
-        $(".youtube").colorbox({iframe: true, innerWidth: 640, innerHeight: 390});
-    } else {
-        $(".youtube").colorbox({iframe: true, innerWidth: 320, innerHeight: 240});
-    }
-    $(window).resize(function () {
-        if ($(window).width() >= 760) {
-            $(".youtube").colorbox({iframe: true, innerWidth: 640, innerHeight: 390});
-        } else {
-            $(".youtube").colorbox({iframe: true, innerWidth: 320, innerHeight: 240});
         }
     });
 
