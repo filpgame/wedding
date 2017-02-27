@@ -77,7 +77,7 @@ class HomeController extends Controller
 
     public function redirectToPontofrio(\Request $request)
     {
-        return redirect('http://www.pontofrio.com.br/Site/ListaGerenciadaLandingPage.aspx?idListaCompra=592592');
+        return redirect('http://www.pontofrio.com.br/Site/ListaGerenciadaLandingPage.aspx?idListaCompra=592592&ordenacao=1&paginaAtual=1&numPorPagina=150');
     }
 
     public function rsvp(\Request $request)

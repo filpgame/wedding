@@ -55,7 +55,7 @@
             {{-- Intro Text --}}
 
             <div class="title1 title1_2">Vamos Casar!</div>
-            <div class="bullet"><span>07 <b>01</b></span></div>
+            <div class="bullet"><span>17 <b>06</b></span></div>
             <div class="title0">2017</div>
             <a href="#married" class="intro_down"><span><i class="fa fa-angle-down"></i></span></a>
         </div>
@@ -75,11 +75,11 @@
 
             <div class="married_txt" data-bottom="opacity:0" data-center="opacity:1">
                 <h2><span>Você está</span> Convidado!</h2>
-                Dia 07 de Janeiro de 2017<br>
+                Dia 17 de Junho de 2017<br>
                 <b>Felipe Rodrigues & Suellen Leite</b><br>
                 <a href="#rsvp" class="btn go">CONFIRME JÁ</a>
 
-                <div class="married_coundown"></div>
+                <div class="countdown"></div>
                 <div class="double_arrow"></div>
             </div>
         </div>
@@ -92,24 +92,24 @@
             <h2><span>Nossos</span> Padrinhos e Madrinhas</h2>
 
 
-            <div class="guest_wrapper">
+            <div class="guest_men">
                 {{-- Best Man & Maid of Honor  --}}
                 @foreach($bestMen as $man)
                     <div class="guest_item">
-                        <div class="guest_photo"><img src="{{getFacebookPicture($man["picture"])}}" alt="Best Man"></div>
-                        <div class="guest_title"><span>Best Man</span> {{$man["name"]}}</div>
-                        <i class="flaticon-balloon14"></i> Top
+                        <div class="guest_photo"><img src="{{getFacebookPicture($man["picture"])}}" alt="{{$man["name"]}}"></div>
+                        <div class="guest_title"><span>Padrinho</span> {{$man["name"]}}</div>
+                        {{--<i class="flaticon-balloon14"></i> Top--}}
                     </div>
                 @endforeach
             </div>
 
 
-            <div class="guest_wrapper">
+            <div class="guest_women">
                 @foreach($bridesMaid as $maid)
                     <div class="guest_item">
-                        <div class="guest_photo"><img src="{{getFacebookPicture($maid["picture"])}}" alt="Best Man"></div>
-                        <div class="guest_title"><span>Best Man</span> {{$maid["name"]}}</div>
-                        <i class="flaticon-balloon14"></i> Top
+                        <div class="guest_photo"><img src="{{getFacebookPicture($maid["picture"])}}" alt="{{$maid["name"]}}"></div>
+                        <div class="guest_title"><span>Madrinha</span> {{$maid["name"]}}</div>
+                        {{--<i class="flaticon-balloon14"></i> Top--}}
                     </div>
                 @endforeach
             </div>
@@ -139,7 +139,7 @@
 
                 <div class="pattern2"></div>
                 <div class="title1">Às 15h30</div>
-                <div class="title4">07 de Janeiro de 2017</div>
+                <div class="title4">17 de Junho de 2017</div>
                 <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA6L965mKtwARLyJacssHVj8&key=AIzaSyBYF9dF3HJPC7_jJsn8Bsb-puah8kpuRcQ" allowfullscreen></iframe>
                 <div class="pattern3"></div>
             </div>
@@ -166,15 +166,15 @@
                     <div class="paper_title">Confirme sua Presença</div>
 
                     {{-- Form --}}
-                    <form id="div_block_1" action="{{route('rsvp')}}">
+                    <form id="form_rsvp" action="{{route('rsvp')}}">
                         {{csrf_field()}}
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="name_block_1" name="name" placeholder="Seu Nome">
+                            <input type="text" class="form-control" name="name" placeholder="Seu Nome" required>
                         </div>
                         <div class="txt_input">
-                            <input type="text" class="form-control" id="email_block_1" name="phone" placeholder="Telefone">
+                            <input type="text" class="form-control" name="phone" placeholder="Telefone" pattern="\([0-9]{2}\)[\s][0-9]{4,5}-[0-9]{4}" required>
                         </div>
-                        <input type="submit" value="Enviar" class="btn btn-lg submit_block_1">
+                        <input type="submit" value="Enviar" class="btn btn-lg">
 
                         {{-- Form Additional text --}}
                         <p>Estamos animados em ver você! Quaisquer Dúvidas,
@@ -289,6 +289,7 @@
 
 
     <script src="{{asset('js/jquery-1.11.0.min.js')}}"></script>
+    <script src="{{asset('js/jquery.mask.min.js')}}"></script>
     {{-- CountDown JS --}}
     <script type="text/javascript" src="{{asset('js/jquery.plugin.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/jquery.countdown.min.js')}}"></script>

@@ -2,47 +2,11 @@
     "use strict";
 
     /*RSVP Form*/
-    $(".submit_block_1").on("click", function (e) {
-        send_form('block_1');
+    $("#form_rsvp").submit(function (e) {
+        e.preventDefault();
+
         return false;
     });
-
-    function send_form(type) {
-
-        var name = $("input#name_" + type).val();
-        if (name == "") {
-            $("input#name_" + type).css({border: "1px solid red"});
-            $("input#name_" + type).focus();
-            return false;
-        }
-        var email = $("input#email_" + type).val();
-        if (email == "") {
-            $("input#email_" + type).css({border: "1px solid red"});
-            $("input#email_" + type).focus();
-            return false;
-        }
-        var guest = $("input#guest_" + type).val();
-        if (guest == "") {
-            $("input#guest_" + type).css({border: "1px solid red"});
-            $("input#guest_" + type).focus();
-            return false;
-        }
-        var attending = $("input#attending_" + type).val();
-        if (attending == "") {
-            $("input#attending_" + type).css({border: "1px solid red"});
-            $("input#attending_" + type).focus();
-            return false;
-        }
-
-        var dataString = '&name=' + name + '&email=' + email + '&guest=' + guest + '&attending=' + attending;
-        var form = $(this);
-        var str = form.serialize();
-        $.ajax({
-            type: "POST", url: "mail/mail.php", data: dataString, success: function () {
-                $('#div_' + type).html("<div id='form_send_message'>Thank you for your request, we will contact you as soon as possible to confirm your booking.</div>", 1500);
-            }
-        });
-    }
 
     /*ScrollR */
     if ($(window).width() > 1024) {
@@ -58,7 +22,7 @@
     });
 
     /*Main Menu Button */
-    $('.main_menu_btn').on("click", function (e) {
+    $('.main_menu_btn').click(function (e) {
         $(this).toggleClass('main_menu_btn_open');
         $('.main_menu_block').toggleClass('main_menu_block_open').fadeToggle();
         $('.main_menu_block').find('.menu_wrapper').toggleClass('active');
@@ -104,22 +68,9 @@
         e.preventDefault();
     });
 
-    /*Player*/
-    $('.music').on("click", function (e) {
-        $('.player').fadeToggle();
-        e.preventDefault();
-    });
-
 
     /*CountDown*/
-    $('.married_coundown').countdown({until: new Date(2017, 6, 17)});
-
-    /*OWL Carousel in Our Story*/
-    $(".story_wrapper").owlCarousel({
-        navigation: true, responsive: true, responsiveRefreshRate: 200, slideSpeed: 200,
-        paginationSpeed: 200, rewindSpeed: 500, items: 3, itemsTablet: [768, 1], autoPlay: true,
-        itemsMobile: [479, 1], itemsDesktopSmall: [980, 1], itemsDesktop: [1500, 2], mouseDrag: false
-    });
+    $('.countdown').countdown({until: new Date(2017, 6, 17)});
 
     /*Gallery Carousel */
     $(".gallery_wrapper").owlCarousel({
@@ -135,10 +86,12 @@
     });
 
     /*The Crew Carousel*/
-    $(".guest_wrapper").owlCarousel({
+    var a = {
         navigation: true, responsive: true, responsiveRefreshRate: 200, slideSpeed: 200, paginationSpeed: 200,
         rewindSpeed: 500, stopOnHover: true, autoHeight: true, items: 4, mouseDrag: false, autoPlay: true
-    });
+    };
+    $(".guest_men").owlCarousel(a);
+    $(".guest_women").owlCarousel(a);
 
     /*Slider Carousel*/
     $(".slider").owlCarousel({
@@ -164,7 +117,5 @@
         color: '#fff', minPixel: 1, maxPixel: 3, total: 55, on: '.into_firefly'
     });
 
-    /* Refresh ScrollR */
-    s.refresh($(".guest_wrapper, .our_story"));
-
+    $("#form_rsvp input[name=phone]").mask('(00) 00000-0000');
 });
