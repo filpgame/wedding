@@ -12,7 +12,7 @@
             "Nome": name,
             "Telefone": phone
         });
-
+        mixpanel.people.identify(phone);
         mixpanel.track("Enviou RSVP", {
             "Nome": name,
             "Telefone": phone
