@@ -68,7 +68,7 @@
 
     /*CountDown*/
     $('.countdown').countdown({
-        until: new Date(2017, 6, 17),
+        until: new Date(2017, 5, 17, 15, 30),
         labels: ['Anos', 'Meses', 'Semanas', 'Dias', 'Horas', 'Minutos', 'Segundos'],
         labels1: ['Ano', 'Mês', 'Semana', 'Dia', 'Hora', 'Minuto', 'Segundo']
     });
