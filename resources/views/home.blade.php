@@ -31,7 +31,7 @@
             <div class="sub_menu anim">
                 <ul>
                     <li><a id="btn-menu-guests" href="#guests">Padrinhos e Madrinhas</a></li>
-                    <li><a id="btn-menu-when_where" href="#when_where">Quando & Onde</a></li>
+                    <li><a id="btn-menu-when_where" href="#when_where">Onde & Quando</a></li>
                     <li><a id="btn-menu-rsvp" href="#rsvp">Confirmar Presença</a></li>
                     <li><a id="btn-menu-gallery" href="#gallery">Nossa Galeria</a></li>
                     <li><a id="btn-menu-registry" href="#registry">Lista de Presentes</a></li>
