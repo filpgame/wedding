@@ -162,6 +162,7 @@
                 </div>
 
                 <div class="paper">
+                    <div class="alert alert-success alert-dismissible">Confirmação Enviada!</div>
 
                     {{-- End Date of Reservation --}}
                     <div class="paper_title">Confirme sua Presença</div>

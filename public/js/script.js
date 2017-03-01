@@ -8,15 +8,15 @@
         var name = $(this).find("input[name=name]").val();
         var phone = $(this).find("input[name=phone]").val();
 
-        mixpanel.people.set({
-            "Nome": name,
-            "Telefone": phone
-        });
-        mixpanel.people.identify(phone);
         mixpanel.track("Enviou RSVP", {
             "Nome": name,
             "Telefone": phone
         });
+        $("div.alert.alert-success").show(500);
+
+        setTimeout(function () {
+            $("div.alert.alert-success").hide(500);
+        }, 4000);
         return false;
     });
 
