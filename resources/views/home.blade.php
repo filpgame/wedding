@@ -30,12 +30,11 @@
         <div class="menu_wrapper">
             <div class="sub_menu anim">
                 <ul>
-                    <li><a href="#guests">Padrinhos e Madrinhas</a></li>
-                    <li><a href="#when_where">Quando & Onde</a></li>
-                    <li><a href="#hotel">Como Chegar</a></li>
-                    <li><a href="#rsvp">Confirmar Presença</a></li>
-                    <li><a href="#gallery">Nossa Galeria</a></li>
-                    <li><a href="#registry">Lista de Presentes</a></li>
+                    <li><a id="btn-menu-guests" href="#guests">Padrinhos e Madrinhas</a></li>
+                    <li><a id="btn-menu-when_where" href="#when_where">Quando & Onde</a></li>
+                    <li><a id="btn-menu-rsvp" href="#rsvp">Confirmar Presença</a></li>
+                    <li><a id="btn-menu-gallery" href="#gallery">Nossa Galeria</a></li>
+                    <li><a id="btn-menu-registry" href="#registry">Lista de Presentes</a></li>
                 </ul>
             </div>
             <div class="sub_img anim"></div>
@@ -77,7 +76,7 @@
                 <h2><span>Você está</span> Convidado!</h2>
                 Dia 17 de Junho de 2017<br>
                 <b>Felipe Rodrigues & Suellen Leite</b><br>
-                <a href="#rsvp" class="btn go">CONFIRME JÁ</a>
+                <a id="btn-go-rsvp" href="#rsvp" class="btn go">CONFIRME JÁ</a>
 
                 <div class="countdown"></div>
                 <div class="double_arrow"></div>
@@ -260,7 +259,7 @@
 
             {{-- Logos & Links --}}
             <div>
-                <a target="_blank" href="{{route('presente')}}"><img src="http://www.mundodapromocao.com.br/wp-content/uploads/2016/05/Logo-Cupom-de-Desconto-Pontofrio.png" alt="Presente" width="420" height="100"></a>
+                <a id="gift-list-pontofrio" target="_blank" href="{{route('presente')}}"><img src="http://www.mundodapromocao.com.br/wp-content/uploads/2016/05/Logo-Cupom-de-Desconto-Pontofrio.png" alt="Presente" width="420" height="100"></a>
             </div>
         </div>
     </section>

@@ -61,6 +61,7 @@
     $('.photocamera span').on("click", function (e) {
         $(this).parents('section').find('.opacity').toggleClass('fade');
         $(this).parents('section').find('.over').fadeToggle();
+        mixpanel.track("Olhou o background do local");
         e.preventDefault();
     });
 
@@ -118,4 +119,34 @@
     });
 
     $("#form_rsvp input[name=phone]").mask('(00) 00000-0000');
+
+    /** Mixpanel **/
+    $("#gift-list-pontofrio").click(function () {
+        mixpanel.track("Clicou no Pontofrio");
+    });
+
+    $("#btn-go-rsvp").click(function () {
+        mixpanel.track("Clicou em 'Confirme Já'");
+    });
+
+    $("#btn-menu-guests").click(function () {
+        mixpanel.track("Clicou no menu 'Padrinhos & Madrinhas'");
+    });
+
+    $("#btn-menu-when_where").click(function () {
+        mixpanel.track("Clicou no menu 'Onde & Quando'");
+    });
+
+    $("#btn-menu-rsvp").click(function () {
+        mixpanel.track("Clicou no menu 'Confirmar Presença'");
+    });
+
+    $("#btn-menu-gal/lery").click(function () {
+        mixpanel.track("Clicou no menu 'Galeria'");
+    });
+
+    $("#btn-menu-registry").click(function () {
+        mixpanel.track("Clicou no menu 'Lista de Presentes'");
+    });
+
 });
