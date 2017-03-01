@@ -12,11 +12,8 @@
             "Nome": name,
             "Telefone": phone
         });
+        $(this).find("input[type=submit]").hide();
         $("div.alert.alert-success").show(500);
-
-        setTimeout(function () {
-            $("div.alert.alert-success").hide(500);
-        }, 4000);
         return false;
     });
 
