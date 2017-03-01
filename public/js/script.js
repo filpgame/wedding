@@ -141,7 +141,7 @@
         mixpanel.track("Clicou no menu 'Confirmar Presença'");
     });
 
-    $("#btn-menu-gal/lery").click(function () {
+    $("#btn-menu-gallery").click(function () {
         mixpanel.track("Clicou no menu 'Galeria'");
     });
 
