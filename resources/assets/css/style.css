@@ -572,11 +572,13 @@ header {
 				transform:skew(17deg,0);
 				transform-origin:100% 100% 0 
 			}
-.married_coundown {
+
+.countdown {
 	font: 400 40px/48px Roboto Condensed ;
 	margin: 20px 0 0 0
 }
-	.married_coundown .countdown-section {
+
+.countdown .countdown-section {
 		display: inline-block;
 		vertical-align: top;
 		text-align: center;
@@ -584,11 +586,13 @@ header {
 		min-width: 60px;
 		position: relative;
 	}
-		.married_coundown .countdown-amount {
+
+.countdown .countdown-amount {
 			min-width: 60px;
 			text-align: center;
-		} 
-	.married_coundown .countdown-section:before {
+		}
+
+.countdown .countdown-section:before {
 		content: " : ";
 		display: inline-block;
 		vertical-align: top;
@@ -597,10 +601,12 @@ header {
 		left: 0
 
 	}
-		.married_coundown .countdown-section:first-child:before {
+
+.countdown .countdown-section:first-child:before {
 			display: none
 		}
-	.married_coundown .countdown-period {
+
+.countdown .countdown-period {
 		font: 20px/24px Great Vibes;
 		color: #c5c3be;
 		display: block;
@@ -1289,11 +1295,11 @@ header {
 		
 	}
 	.when_where_container .title3 {
-		width: 300px;
+        width: auto;
 		margin: 0 auto
 	}
 	.when_where_container .title4 {
-		width: 400px;
+        width: auto;
 		margin: 0 auto
 	}
 	.when_where .over {
@@ -1370,7 +1376,7 @@ header {
 .photocamera {
 	position:absolute;
 	right:100px;
-	top:50%;
+    top: 25%;
 	margin:-20px 0 0 0;
 	z-index:4;
 }

@@ -119,7 +119,7 @@
 
 
     {{-- When & Where --}}
-    <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('pictures/catavento.jpg')}}" data-bottom-top="opacity:0;" data-bottom="opacity:1;">
+    <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('pictures/catavento.jpg')}}" data-bottom-top="opacity:1;" data-bottom="opacity:1;">
         <div class="over"></div>
         <div class="container">
 
@@ -131,15 +131,16 @@
 
                 {{-- Texts --}}
                 <div class="pattern1"></div>
+
                 <div class="title1">Sítio Catavento</div>
                 <div class="title2"></div>
                 <div class="title3">
-                    Rodovia BR-101 Norte - Muribeca <br/>Serra, ES<br/><i class="flaticon-map35"></i>
+                    Rodovia BR-101 Norte - Muribeca <br/>Serra, ES<br/>
                 </div>
 
                 <div class="pattern2"></div>
-                <div class="title1">Às 15h30</div>
-                <div class="title4">17 de Junho de 2017</div>
+                <div class="title4">Sábado, 17 de Junho de 2017</div>
+                <div class="title1">Ás 15h30</div>
                 <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA6L965mKtwARLyJacssHVj8&key=AIzaSyBYF9dF3HJPC7_jJsn8Bsb-puah8kpuRcQ" allowfullscreen></iframe>
                 <div class="pattern3"></div>
             </div>
@@ -177,9 +178,11 @@
                         <input type="submit" value="Enviar" class="btn btn-lg">
 
                         {{-- Form Additional text --}}
-                        <p>Estamos animados em ver você! Quaisquer Dúvidas,
-                            Envie-nos um email: <a href="mailto:lipesu@lipesu.com">lipesu@lipesu.com</a><br>
-                            Ou ligue para <a href="callto:+5527996956489">+55 (27) 99695-6489</a>
+                        <p>Estamos animados em ver você! Quaisquer Dúvidas:</p>
+                        <p>
+                            <b>Email:</b> <a target="_blank" href="mailto:filpgame@gmail.com">filpgame@gmail.com</a>
+                            <br/><b>Telegram:</b> <a target="_blank" href="http://t.me/filpgame">@filpgame</a>
+                            <br/><b>Whatsapp:</b> <a target="_blank" href="intent://send/+5521969950980#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">+5521969950980</a>
                         </p>
                     </form>
                 </div>
@@ -192,7 +195,7 @@
 
     {{-- Gallery --}}
     <section class="gallery" id="gallery">
-        <h2><span>Our</span> Gallery</h2>
+        <h2><span>Nossa</span> Galeria</h2>
         <div class="gallery_wrapper">
             <div class="gallery_item">
                 <div class="gallery_txt">
@@ -251,7 +254,7 @@
             <h2><span>Lista de </span> Presentes</h2>
 
             <p>O que nós mais queremos para nosso casamento é ter nossos amigos e família presentes para celebrar esse momento único conosco. <br>
-                Então antes de tudo nós seremos totalmente gratos com a sua preseça!</p>
+                Então antes de tudo nós seremos totalmente gratos com a sua presença!</p>
             <p>Se você gostaria de nos dar algo de presente, nós também vamos amar! Você encontra nossa lista aqui:</p>
 
             {{-- Logos & Links --}}
@@ -270,19 +273,10 @@
             {{-- Thanks Text --}}
             <div class="thanks">Obrigado por visitar nosso site!</div>
             <div class="footer_txt">
-
-
-                {{-- Social Buttons --}}
-                <div class="footer_social">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                </div>
-
                 <div class="title1">Felipe & Suellen</div>
-                {{-- Copyrights --}}
-                <div class="copyrights">2015 Matthew & Mallory - One Page Wedding Template</div>
 
+                {{-- Copyrights --}}
+                <div class="copyrights">Matthew & Mallory - One Page Wedding Template</div>
             </div>
         </div>
     </section>
