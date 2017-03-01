@@ -69,7 +69,11 @@
 
 
     /*CountDown*/
-    $('.countdown').countdown({until: new Date(2017, 6, 17)});
+    $('.countdown').countdown({
+        until: new Date(2017, 6, 17),
+        labels: ['Anos', 'Meses', 'Semanas', 'Dias', 'Horas', 'Minutos', 'Segundos'],
+        labels1: ['Ano', 'Mês', 'Semana', 'Dia', 'Hora', 'Minuto', 'Segundo']
+    });
 
     /*Gallery Carousel */
     $(".gallery_wrapper").owlCarousel({
