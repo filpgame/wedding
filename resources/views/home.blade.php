@@ -33,7 +33,7 @@
                     <li><a id="btn-menu-guests" href="#guests">Padrinhos e Madrinhas</a></li>
                     <li><a id="btn-menu-when_where" href="#when_where">Onde & Quando</a></li>
                     <li><a id="btn-menu-rsvp" href="#rsvp">Confirmar Presença</a></li>
-                    <li><a id="btn-menu-gallery" href="#gallery">Nossa Galeria</a></li>
+                    {{--<li><a id="btn-menu-gallery" href="#gallery">Nossa Galeria</a></li>--}}
                     <li><a id="btn-menu-registry" href="#registry">Lista de Presentes</a></li>
                 </ul>
             </div>
@@ -90,7 +90,6 @@
         <div class="container">
             <h2><span>Nossos</span> Padrinhos e Madrinhas</h2>
 
-
             <div class="guest_men">
                 {{-- Best Man & Maid of Honor  --}}
                 @foreach($bestMen as $man)
@@ -115,7 +114,6 @@
         </div>
     </section>
     {{-- The Crew End --}}
-
 
     {{-- When & Where --}}
     <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('pictures/catavento.jpg')}}" data-bottom-top="opacity:1;" data-bottom="opacity:1;">
@@ -192,62 +190,6 @@
     </section>
     {{-- RSVP End --}}
 
-
-    {{-- Gallery --}}
-    <section class="gallery" id="gallery">
-        <h2><span>Nossa</span> Galeria</h2>
-        <div class="gallery_wrapper">
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="In late August, on a family vacation to Oahu"><b>Hawaii</b>
-                        In late August, on a family vacation to Oahu
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 1">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="In Summer 2015"><b>New Zealand</b>
-                        In Summer 2015
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 2">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="February 5, 2015 / New-York, USA"><b>Honeymoon</b>
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 3">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="February 5, 2015 / New-York, USA"><b>Honeymoon</b>
-                        February 5, 2015 / New-York, USA
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 4">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="In late August, on a family vacation to Oahu"><b>Hawaii</b>
-                        In late August, on a family vacation to Oahu
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 5">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="In Summer 2015"><b>New Zealand</b>
-                        In Summer 2015<br>
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 6">
-            </div>
-        </div>
-    </section>
-    {{-- Gallery End --}}
-
     {{-- Gift Registry --}}
     <section class="registry" id="registry">
         <div class="container">
@@ -264,6 +206,22 @@
         </div>
     </section>
     {{-- Gift Registry End --}}
+
+    {{-- Gallery --}}
+    {{--<section class="gallery" id="gallery">
+        <h2><span>Nossa</span> Galeria</h2>
+        <div class="gallery_wrapper">
+            @foreach($galleryPictures as $picture)
+                <div class="gallery_item">
+                    <div class="gallery_txt">
+                        <a href="{!! $picture !!}"></a>
+                    </div>
+                    <img src="{!! $picture !!}">
+                </div>
+            @endforeach
+        </div>
+    </section>--}}
+    {{-- Gallery End --}}
 
     {{-- Footer --}}
     <section class="footer white_txt parallax" id="footer" data-image="http://placehold.it/1920x300">

@@ -2,8 +2,12 @@
 namespace App\Http\Controllers;
 
 
+use Artesaos\SEOTools\Traits\SEOTools;
+
 class HomeController extends Controller
 {
+    use SEOTools;
+
     public function index()
     {
         $bestMen = [[
@@ -63,12 +67,18 @@ class HomeController extends Controller
             "name" => "Vitória",
             "picture" => 100004914693030
         ]];
-        $pictures = [
-            "http://www.dicasdacarol.com.br/wp-content/uploads/2016/05/Casamento-1.jpg"
-        ];
+
+        $backgroundPictures = $this->buildBackgroundPictures();
+
+//        $galleryPictures = $this->buildGalleryPictures();
+//        $galleryPicturesAssets = [];
+//        foreach (array_rand($galleryPictures, 6) as $index) {
+//            $galleryPicturesAssets[] = asset("pictures/" . $galleryPictures[$index]['basename']);
+//        }
 
         $env = [
-            'picture' => $pictures[array_rand($pictures)],
+            'picture' => asset("pictures/" . $backgroundPictures[array_rand($backgroundPictures)]['basename']),
+//            'galleryPictures' => $galleryPicturesAssets,
             'bestMen' => $bestMen,
             'bridesMaid' => $bridesMaid
         ];
@@ -83,5 +93,40 @@ class HomeController extends Controller
     public function rsvp(\Request $request)
     {
 
+    }
+
+    private function pictures_path($file)
+    {
+        return public_path("pictures" . DIRECTORY_SEPARATOR . $file['basename']);
+    }
+
+    private function buildBackgroundPictures()
+    {
+        $files = \Flysystem::listContents('/background');
+        $files = array_where($files, function ($array) {
+            return ($array['type'] == 'file' && str_contains($array['mimetype'], 'image/'));
+        });
+
+        foreach ($files as $file) {
+            if (!file_exists($this->pictures_path($file))) {
+                file_put_contents($this->pictures_path($file), \Flysystem::read($file['path']));
+            }
+        }
+        return $files;
+    }
+
+    private function buildGalleryPictures()
+    {
+        $files = \Flysystem::listContents('/gallery');
+        $files = array_where($files, function ($array) {
+            return ($array['type'] == 'file' && str_contains($array['mimetype'], 'image/'));
+        });
+
+        foreach ($files as $file) {
+            if (!file_exists($this->pictures_path($file))) {
+                file_put_contents($this->pictures_path($file), \Flysystem::read($file['path']));
+            }
+        }
+        return $files;
     }
 }
