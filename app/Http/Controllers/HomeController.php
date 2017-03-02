@@ -10,6 +10,7 @@ class HomeController extends Controller
 
     public function index()
     {
+
         $bestMen = [[
             "name" => "Caio",
             "picture" => 100012563108301
@@ -78,7 +79,7 @@ class HomeController extends Controller
 
         $env = [
             'picture' => asset("pictures/" . $backgroundPictures[array_rand($backgroundPictures)]['basename']),
-//            'galleryPictures' => $galleryPicturesAssets,
+            'footerPicture' => asset("pictures/" . $backgroundPictures[array_rand($backgroundPictures)]['basename']),
             'bestMen' => $bestMen,
             'bridesMaid' => $bridesMaid
         ];

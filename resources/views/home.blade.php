@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {!! SEO::generate() !!}
     <title>Lipe & Su</title>
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/all.css')}}"/>
-
     {{-- Google Fonts --}}
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
@@ -224,7 +224,7 @@
     {{-- Gallery End --}}
 
     {{-- Footer --}}
-    <section class="footer white_txt parallax" id="footer" data-image="http://placehold.it/1920x300">
+    <section class="footer white_txt parallax" id="footer" data-image="{!! $footerPicture !!}">
         <div class="over"></div>
         <div class="container">
 
