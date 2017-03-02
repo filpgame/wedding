@@ -3,13 +3,21 @@ namespace App\Http\Controllers;
 
 
 use Artesaos\SEOTools\Traits\SEOTools;
+use SEO;
 
 class HomeController extends Controller
 {
     use SEOTools;
+    private $backgroundPictures = null;
 
     public function index()
     {
+        SEO::setTitle('Lipe & Su');
+        SEO::setDescription('Poderíamos escrever aqui uma linda frase, mas nada disso seria suficiente para descrever esse momento único que viveremos!');
+        SEO::opengraph()->setUrl(\Request::url());
+        SEO::setCanonical(\Request::url());
+        SEO::opengraph()->addProperty('type', 'wedding');
+        SEO::twitter()->setSite('@lipitchu');
 
         $bestMen = [[
             "name" => "Caio",
@@ -69,17 +77,16 @@ class HomeController extends Controller
             "picture" => 100004914693030
         ]];
 
-        $backgroundPictures = $this->buildBackgroundPictures();
-
 //        $galleryPictures = $this->buildGalleryPictures();
 //        $galleryPicturesAssets = [];
 //        foreach (array_rand($galleryPictures, 6) as $index) {
 //            $galleryPicturesAssets[] = asset("pictures/" . $galleryPictures[$index]['basename']);
 //        }
 
+        SEO::addImages([$this->getRandomPictureAsset(), $this->getRandomPictureAsset(), $this->getRandomPictureAsset()]);
         $env = [
-            'picture' => asset("pictures/" . $backgroundPictures[array_rand($backgroundPictures)]['basename']),
-            'footerPicture' => asset("pictures/" . $backgroundPictures[array_rand($backgroundPictures)]['basename']),
+            'picture' => $this->getRandomPictureAsset(),
+            'footerPicture' => $this->getRandomPictureAsset(),
             'bestMen' => $bestMen,
             'bridesMaid' => $bridesMaid
         ];
@@ -129,5 +136,17 @@ class HomeController extends Controller
             }
         }
         return $files;
+    }
+
+    /**
+     * @return string
+     */
+
+    private function getRandomPictureAsset()
+    {
+        if ($this->backgroundPictures == null) {
+            $this->backgroundPictures = $this->buildBackgroundPictures();
+        }
+        return asset("pictures/" . $this->backgroundPictures[array_rand($this->backgroundPictures)]['basename']);
     }
 }
