@@ -66,10 +66,10 @@
     {{-- Married --}}
     <section class="married clearfix" id="married">
         <div class="container">
-            <div class="im1 parallax" data-bottom="left:20%" data-center="left:0" data-image="{{asset('pictures/felipe-profile.jpg')}}">
+            <div class="im1 parallax" data-bottom="left:20%" data-center="left:0" data-image="{{asset('images/felipe-profile.jpg')}}">
                 <div class="im_arrows"></div>
             </div>
-            <div class="im2 parallax" data-bottom="right:20%" data-center="right:0" data-image="{{asset('pictures/suellen-profile.jpg')}}">
+            <div class="im2 parallax" data-bottom="right:20%" data-center="right:0" data-image="{{asset('images/suellen-profile.jpg')}}">
                 <div class="im_arrows"></div>
             </div>
 
@@ -117,7 +117,7 @@
     {{-- The Crew End --}}
 
     {{-- When & Where --}}
-    <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('pictures/catavento.jpg')}}" data-bottom-top="opacity:1;" data-bottom="opacity:1;">
+    <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('images/catavento.jpg')}}" data-bottom-top="opacity:1;" data-bottom="opacity:1;">
         <div class="over"></div>
         <div class="container">
 
