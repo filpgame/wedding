@@ -500,11 +500,11 @@ header {
 	.bullet span {
 		position: absolute;
 		margin: -3px 0 0 -35px;
-		opacity: 0.5;
-		font: 400 18px/28px Roboto Condensed
+		font: 400 20px/28px Roboto Condensed
+		text-shadow: 0px 0px 15px black;
 	}
 		.bullet span b {
-			font: 400 18px/28px Roboto Condensed;
+			font: 400 20px/28px Roboto Condensed;
 			display: inline-block;
 			margin: 0 0 0 30px;
 		}
@@ -1341,8 +1341,9 @@ header {
 		margin: 20px auto 0
 	}
 	.title0 {
-		font:300 16px/28px Roboto Condensed;
-		color:rgba(255,255,255,0.5);
+		font:400 20px/28px Roboto Condensed;
+		color: white;
+		text-shadow: 0px 0px 15px black;
 	}
 	.title1 {
 		font:46px/48px Great Vibes;
