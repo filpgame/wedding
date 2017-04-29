@@ -1350,6 +1350,8 @@ header {
 		.title1_2 {
 			text-indent:-15px;
 			font:52px/56px Great Vibes;
+			text-shadow: 0px 0px 15px black;
+    			color: #ffffff;
 		}
 	.title2 {
 		font:56px/60px Roboto Condensed;
