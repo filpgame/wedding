@@ -64,14 +64,23 @@ class HomeController extends Controller
             "name" => "Claudia",
             "picture" => 100001537551277
         ], [
+            "name" => "Dhecika",
+            "picture" => 100002052434008
+        ], [
             "name" => "Gabriela",
             "picture" => 100002079846433
         ], [
             "name" => "Jessica",
             "picture" => 100002892781368
         ], [
+            "name" => "Mônica",
+            "picture" => 1803072720,
+        ], [
             "name" => "Rafaela",
             "picture" => 100001274361808,
+        ], [
+            "name" => "Rayane",
+            "picture" => 100011448022914,
         ], [
             "name" => "Vitória",
             "picture" => 100004914693030
