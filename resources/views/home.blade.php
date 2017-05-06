@@ -146,6 +146,23 @@
     </section>
     {{-- When & Where End --}}
 
+    {{-- Gift Registry --}}
+    <section class="registry" id="registry">
+        <div class="container">
+            <h2><span>Lista de </span> Presentes</h2>
+
+            <p>O que nós mais queremos para nosso casamento é ter nossos amigos e família presentes para celebrar esse momento único conosco. <br>
+                Então antes de tudo nós seremos totalmente gratos com a sua presença!</p>
+            <p>Se você gostaria de nos dar algo de presente, nós também vamos amar! Você encontra nossa lista aqui:</p>
+
+            {{-- Logos & Links --}}
+            <div>
+                <a id="gift-list-pontofrio" target="_blank" href="{{route('presente')}}"><img src="http://www.mundodapromocao.com.br/wp-content/uploads/2016/05/Logo-Cupom-de-Desconto-Pontofrio.png" alt="Presente" width="420" height="100"></a>
+            </div>
+        </div>
+    </section>
+    {{-- Gift Registry End --}}
+    
     {{-- RSVP --}}
     <section class="rsvp" id="rsvp">
         <div class="container">
@@ -190,23 +207,6 @@
         </div>
     </section>
     {{-- RSVP End --}}
-
-    {{-- Gift Registry --}}
-    <section class="registry" id="registry">
-        <div class="container">
-            <h2><span>Lista de </span> Presentes</h2>
-
-            <p>O que nós mais queremos para nosso casamento é ter nossos amigos e família presentes para celebrar esse momento único conosco. <br>
-                Então antes de tudo nós seremos totalmente gratos com a sua presença!</p>
-            <p>Se você gostaria de nos dar algo de presente, nós também vamos amar! Você encontra nossa lista aqui:</p>
-
-            {{-- Logos & Links --}}
-            <div>
-                <a id="gift-list-pontofrio" target="_blank" href="{{route('presente')}}"><img src="http://www.mundodapromocao.com.br/wp-content/uploads/2016/05/Logo-Cupom-de-Desconto-Pontofrio.png" alt="Presente" width="420" height="100"></a>
-            </div>
-        </div>
-    </section>
-    {{-- Gift Registry End --}}
 
     {{-- Gallery --}}
     {{--<section class="gallery" id="gallery">
