@@ -115,37 +115,7 @@
         </div>
     </section>
     {{-- The Crew End --}}
-
-    {{-- When & Where --}}
-    <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('images/catavento.jpg')}}" data-bottom-top="opacity:1;" data-bottom="opacity:1;">
-        <div class="over"></div>
-        <div class="container">
-
-            {{-- Photocamera Icon --}}
-            <div class="photocamera"><span class="flaticon-slr2"></span></div>
-
-            <div class="when_where_container opacity">
-                <h2><span>Onde &amp;</span> Quando</h2>
-
-                {{-- Texts --}}
-                <div class="pattern1"></div>
-
-                <div class="title1">Sítio Catavento</div>
-                <div class="title2"></div>
-                <div class="title3">
-                    Rodovia BR-101 Norte - Muribeca <br/>Serra, ES<br/>
-                </div>
-
-                <div class="pattern2"></div>
-                <div class="title4">Sábado, 17 de Junho de 2017</div>
-                <div class="title1">Ás 15h30</div>
-                <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA6L965mKtwARLyJacssHVj8&key=AIzaSyBYF9dF3HJPC7_jJsn8Bsb-puah8kpuRcQ" allowfullscreen></iframe>
-                <div class="pattern3"></div>
-            </div>
-        </div>
-    </section>
-    {{-- When & Where End --}}
-
+    
     {{-- Gift Registry --}}
     <section class="registry" id="registry">
         <div class="container">
@@ -207,6 +177,36 @@
         </div>
     </section>
     {{-- RSVP End --}}
+    
+    {{-- When & Where --}}
+    <section class="when_where white_txt parallax" id="when_where" data-image="{{asset('images/catavento.jpg')}}" data-bottom-top="opacity:1;" data-bottom="opacity:1;">
+        <div class="over"></div>
+        <div class="container">
+
+            {{-- Photocamera Icon --}}
+            <div class="photocamera"><span class="flaticon-slr2"></span></div>
+
+            <div class="when_where_container opacity">
+                <h2><span>Onde &amp;</span> Quando</h2>
+
+                {{-- Texts --}}
+                <div class="pattern1"></div>
+
+                <div class="title1">Sítio Catavento</div>
+                <div class="title2"></div>
+                <div class="title3">
+                    Rodovia BR-101 Norte - Muribeca <br/>Serra, ES<br/>
+                </div>
+
+                <div class="pattern2"></div>
+                <div class="title4">Sábado, 17 de Junho de 2017</div>
+                <div class="title1">Ás 15h30</div>
+                <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA6L965mKtwARLyJacssHVj8&key=AIzaSyBYF9dF3HJPC7_jJsn8Bsb-puah8kpuRcQ" allowfullscreen></iframe>
+                <div class="pattern3"></div>
+            </div>
+        </div>
+    </section>
+    {{-- When & Where End --}}
 
     {{-- Gallery --}}
     {{--<section class="gallery" id="gallery">
