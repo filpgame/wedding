@@ -35,9 +35,6 @@ class HomeController extends Controller
             "name" => "Gabriel",
             "picture" => 100001626924230
         ], [
-            "name" => "Israel",
-            "picture" => 100009681122628
-        ], [
             "name" => "Jezreel",
             "picture" => 100003704398397
         ], [
@@ -69,9 +66,6 @@ class HomeController extends Controller
         ], [
             "name" => "Gabriela",
             "picture" => 100002079846433
-        ], [
-            "name" => "Jessica",
-            "picture" => 100002892781368
         ], [
             "name" => "Mônica",
             "picture" => 1803072720,
