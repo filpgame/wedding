@@ -225,7 +225,7 @@
     {{-- Gallery End --}}
 
     {{-- Footer --}}
-    <section class="footer white_txt parallax" id="footer" data-image="{!! $footerPicture !!}">
+    <section class="footer white_txt parallax" id="footer">
         <div class="over"></div>
         <div class="container">
 
